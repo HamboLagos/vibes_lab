@@ -1,0 +1,1707 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods + Flat24  (Intel 8051), page 1.
+
+Symbol Table
+
+    .__.ABS.                                                    =  0000 G
+    A                                                              00E0 
+ 1A A$test_radio$1000                                              00C6 GR
+ 1A A$test_radio$1001                                              00C7 GR
+ 1A A$test_radio$1002                                              00C9 GR
+ 1A A$test_radio$1003                                              00CC GR
+ 1A A$test_radio$1004                                              00CE GR
+ 1A A$test_radio$1005                                              00D0 GR
+ 1A A$test_radio$1006                                              00D2 GR
+ 1A A$test_radio$1007                                              00D4 GR
+ 1A A$test_radio$1008                                              00D6 GR
+ 1A A$test_radio$1009                                              00D8 GR
+ 1A A$test_radio$1013                                              00DA GR
+ 1A A$test_radio$1014                                              00DC GR
+ 1A A$test_radio$1015                                              00DE GR
+ 1A A$test_radio$1016                                              00E0 GR
+ 1A A$test_radio$1017                                              00E2 GR
+ 1A A$test_radio$1018                                              00E4 GR
+ 1A A$test_radio$1019                                              00E6 GR
+ 1A A$test_radio$1020                                              00E8 GR
+ 1A A$test_radio$1021                                              00EA GR
+ 1A A$test_radio$1022                                              00EC GR
+ 1A A$test_radio$1023                                              00EE GR
+ 1A A$test_radio$1024                                              00EF GR
+ 1A A$test_radio$1025                                              00F1 GR
+ 1A A$test_radio$1026                                              00F4 GR
+ 1A A$test_radio$1027                                              00F6 GR
+ 1A A$test_radio$1028                                              00F8 GR
+ 1A A$test_radio$1029                                              00FA GR
+ 1A A$test_radio$1030                                              00FC GR
+ 1A A$test_radio$1031                                              00FE GR
+ 1A A$test_radio$1035                                              0100 GR
+ 1A A$test_radio$1036                                              0102 GR
+ 1A A$test_radio$1037                                              0103 GR
+ 1A A$test_radio$1038                                              0104 GR
+ 1A A$test_radio$1041                                              0107 GR
+ 1A A$test_radio$1061                                              010A GR
+ 1A A$test_radio$1062                                              010C GR
+ 1A A$test_radio$1063                                              010E GR
+ 1A A$test_radio$1064                                              0110 GR
+ 1A A$test_radio$1065                                              0112 GR
+ 1A A$test_radio$1066                                              0114 GR
+ 1A A$test_radio$1067                                              0116 GR
+ 1A A$test_radio$1068                                              0118 GR
+ 1A A$test_radio$1069                                              011A GR
+ 1A A$test_radio$1070                                              011C GR
+ 1A A$test_radio$1071                                              011E GR
+ 1A A$test_radio$1072                                              0120 GR
+ 1A A$test_radio$1073                                              0122 GR
+ 1A A$test_radio$1074                                              0124 GR
+ 1A A$test_radio$1075                                              0126 GR
+ 1A A$test_radio$1078                                              0129 GR
+ 1A A$test_radio$1081                                              012B GR
+ 1A A$test_radio$1082                                              012E GR
+ 1A A$test_radio$1084                                              0131 GR
+ 1A A$test_radio$1085                                              0134 GR
+ 1A A$test_radio$1089                                              0137 GR
+ 1A A$test_radio$1090                                              013A GR
+ 1A A$test_radio$1092                                              013D GR
+ 1A A$test_radio$1093                                              013F GR
+ 1A A$test_radio$1094                                              0140 GR
+ 1A A$test_radio$1095                                              0142 GR
+ 1A A$test_radio$1096                                              0143 GR
+ 1A A$test_radio$1097                                              0144 GR
+ 1A A$test_radio$1098                                              0146 GR
+ 1A A$test_radio$1099                                              0148 GR
+ 1A A$test_radio$1103                                              014B GR
+ 1A A$test_radio$1104                                              014D GR
+ 1A A$test_radio$1105                                              014F GR
+ 1A A$test_radio$1106                                              0151 GR
+ 1A A$test_radio$1107                                              0152 GR
+ 1A A$test_radio$1108                                              0155 GR
+ 1A A$test_radio$1109                                              0156 GR
+ 1A A$test_radio$1110                                              0157 GR
+ 1A A$test_radio$1111                                              0158 GR
+ 1A A$test_radio$1112                                              015A GR
+ 1A A$test_radio$1113                                              015D GR
+ 1A A$test_radio$1114                                              0160 GR
+ 1A A$test_radio$1115                                              0163 GR
+ 1A A$test_radio$1116                                              0166 GR
+ 1A A$test_radio$1117                                              0168 GR
+ 1A A$test_radio$1118                                              016A GR
+ 1A A$test_radio$1121                                              016C GR
+ 1A A$test_radio$1122                                              016E GR
+ 1A A$test_radio$1123                                              0170 GR
+ 1A A$test_radio$1124                                              0172 GR
+ 1A A$test_radio$1125                                              0175 GR
+ 1A A$test_radio$1126                                              0178 GR
+ 1A A$test_radio$1127                                              017B GR
+ 1A A$test_radio$1128                                              017E GR
+ 1A A$test_radio$1129                                              0180 GR
+ 1A A$test_radio$1130                                              0182 GR
+ 1A A$test_radio$1133                                              0184 GR
+ 1A A$test_radio$1136                                              0187 GR
+ 1A A$test_radio$1137                                              0189 GR
+ 1A A$test_radio$1138                                              018B GR
+ 1A A$test_radio$1142                                              018C GR
+ 1A A$test_radio$1143                                              018E GR
+ 1A A$test_radio$1146                                              0190 GR
+ 1A A$test_radio$1147                                              0192 GR
+ 1A A$test_radio$1148                                              0194 GR
+ 1A A$test_radio$1149                                              0195 GR
+ 1A A$test_radio$1150                                              0197 GR
+ 1A A$test_radio$1151                                              0199 GR
+ 1A A$test_radio$1152                                              019A GR
+ 1A A$test_radio$1153                                              019B GR
+ 1A A$test_radio$1154                                              019D GR
+ 1A A$test_radio$1155                                              019F GR
+ 1A A$test_radio$1156                                              01A0 GR
+ 1A A$test_radio$1157                                              01A1 GR
+ 1A A$test_radio$1160                                              01A3 GR
+ 1A A$test_radio$1161                                              01A5 GR
+ 1A A$test_radio$1162                                              01A7 GR
+ 1A A$test_radio$1163                                              01A8 GR
+ 1A A$test_radio$1164                                              01AA GR
+ 1A A$test_radio$1165                                              01AC GR
+ 1A A$test_radio$1166                                              01AD GR
+ 1A A$test_radio$1167                                              01AE GR
+ 1A A$test_radio$1168                                              01B0 GR
+ 1A A$test_radio$1169                                              01B2 GR
+ 1A A$test_radio$1170                                              01B3 GR
+ 1A A$test_radio$1171                                              01B4 GR
+ 1A A$test_radio$1172                                              01B7 GR
+ 1A A$test_radio$1173                                              01B8 GR
+ 1A A$test_radio$1174                                              01B9 GR
+ 1A A$test_radio$1175                                              01BA GR
+ 1A A$test_radio$1176                                              01BB GR
+ 1A A$test_radio$1177                                              01BC GR
+ 1A A$test_radio$1178                                              01BD GR
+ 1A A$test_radio$1179                                              01BF GR
+ 1A A$test_radio$1180                                              01C0 GR
+ 1A A$test_radio$1181                                              01C1 GR
+ 1A A$test_radio$1182                                              01C2 GR
+ 1A A$test_radio$1183                                              01C3 GR
+ 1A A$test_radio$1184                                              01C4 GR
+ 1A A$test_radio$1185                                              01C6 GR
+ 1A A$test_radio$1186                                              01C7 GR
+ 1A A$test_radio$1187                                              01C8 GR
+ 1A A$test_radio$1188                                              01CA GR
+ 1A A$test_radio$1192                                              01CC GR
+ 1A A$test_radio$1193                                              01CE GR
+ 1A A$test_radio$1194                                              01CF GR
+ 1A A$test_radio$1195                                              01D1 GR
+ 1A A$test_radio$1196                                              01D3 GR
+ 1A A$test_radio$1197                                              01D4 GR
+ 1A A$test_radio$1198                                              01D5 GR
+ 1A A$test_radio$1199                                              01D7 GR
+ 1A A$test_radio$1200                                              01D9 GR
+ 1A A$test_radio$1201                                              01DA GR
+ 1A A$test_radio$1202                                              01DB GR
+ 1A A$test_radio$1203                                              01DE GR
+ 1A A$test_radio$1204                                              01E0 GR
+ 1A A$test_radio$1207                                              01E2 GR
+ 1A A$test_radio$1208                                              01E4 GR
+ 1A A$test_radio$1209                                              01E6 GR
+ 1A A$test_radio$1210                                              01E7 GR
+ 1A A$test_radio$1211                                              01E9 GR
+ 1A A$test_radio$1212                                              01EB GR
+ 1A A$test_radio$1213                                              01EC GR
+ 1A A$test_radio$1214                                              01ED GR
+ 1A A$test_radio$1215                                              01EF GR
+ 1A A$test_radio$1216                                              01F1 GR
+ 1A A$test_radio$1217                                              01F2 GR
+ 1A A$test_radio$1218                                              01F3 GR
+ 1A A$test_radio$1219                                              01F5 GR
+ 1A A$test_radio$1220                                              01F6 GR
+ 1A A$test_radio$1221                                              01F8 GR
+ 1A A$test_radio$1222                                              01F9 GR
+ 1A A$test_radio$1223                                              01FA GR
+ 1A A$test_radio$1227                                              01FC GR
+ 1A A$test_radio$1228                                              01FE GR
+ 1A A$test_radio$1229                                              01FF GR
+ 1A A$test_radio$1230                                              0202 GR
+ 1A A$test_radio$1231                                              0203 GR
+ 1A A$test_radio$1232                                              0204 GR
+ 1A A$test_radio$1233                                              0207 GR
+ 1A A$test_radio$1235                                              0209 GR
+ 1A A$test_radio$1239                                              020B GR
+ 1A A$test_radio$1240                                              020D GR
+ 1A A$test_radio$1241                                              020E GR
+ 1A A$test_radio$1242                                              020F GR
+ 1A A$test_radio$1243                                              0210 GR
+ 1A A$test_radio$1244                                              0211 GR
+ 1A A$test_radio$1248                                              0213 GR
+ 1A A$test_radio$1249                                              0215 GR
+ 1A A$test_radio$1250                                              0216 GR
+ 1A A$test_radio$1251                                              0218 GR
+ 1A A$test_radio$1252                                              0219 GR
+ 1A A$test_radio$1253                                              021A GR
+ 1A A$test_radio$1254                                              021B GR
+ 1A A$test_radio$1255                                              021D GR
+ 1A A$test_radio$1259                                              021E GR
+ 1A A$test_radio$1260                                              0220 GR
+ 1A A$test_radio$1261                                              0221 GR
+ 1A A$test_radio$1262                                              0224 GR
+ 1A A$test_radio$1263                                              0225 GR
+ 1A A$test_radio$1264                                              0226 GR
+ 1A A$test_radio$1265                                              0229 GR
+ 1A A$test_radio$1269                                              022B GR
+ 1A A$test_radio$1270                                              022D GR
+ 1A A$test_radio$1271                                              022F GR
+ 1A A$test_radio$1274                                              0230 GR
+ 1A A$test_radio$1278                                              0232 GR
+ 1A A$test_radio$1281                                              0235 GR
+ 1A A$test_radio$1282                                              0237 GR
+ 1A A$test_radio$1285                                              023A GR
+ 1A A$test_radio$1286                                              023C GR
+ 1A A$test_radio$1287                                              023D GR
+ 1A A$test_radio$1288                                              023F GR
+ 1A A$test_radio$1289                                              0241 GR
+ 1A A$test_radio$1290                                              0242 GR
+ 1A A$test_radio$1291                                              0243 GR
+ 1A A$test_radio$1292                                              0245 GR
+ 1A A$test_radio$1293                                              0247 GR
+ 1A A$test_radio$1294                                              0248 GR
+ 1A A$test_radio$1295                                              0249 GR
+ 1A A$test_radio$1296                                              024B GR
+ 1A A$test_radio$1297                                              024C GR
+ 1A A$test_radio$1298                                              024F GR
+ 1A A$test_radio$1302                                              0251 GR
+ 1A A$test_radio$1305                                              0253 GR
+ 1A A$test_radio$1306                                              0255 GR
+ 1A A$test_radio$1307                                              0257 GR
+ 1A A$test_radio$1308                                              0258 GR
+ 1A A$test_radio$1312                                              025A GR
+ 1A A$test_radio$1313                                              025C GR
+ 1A A$test_radio$1314                                              025D GR
+ 1A A$test_radio$1315                                              025F GR
+ 1A A$test_radio$1319                                              0260 GR
+ 1A A$test_radio$1320                                              0263 GR
+ 1A A$test_radio$1323                                              0266 GR
+ 1A A$test_radio$1324                                              0269 GR
+ 1A A$test_radio$1325                                              026C GR
+ 1A A$test_radio$1326                                              026F GR
+ 1A A$test_radio$1327                                              0271 GR
+ 1A A$test_radio$1328                                              0273 GR
+ 1A A$test_radio$1329                                              0275 GR
+ 1A A$test_radio$1330                                              0276 GR
+ 1A A$test_radio$1331                                              0277 GR
+ 1A A$test_radio$1332                                              0278 GR
+ 1A A$test_radio$1333                                              0279 GR
+ 1A A$test_radio$1336                                              027A GR
+ 1A A$test_radio$1339                                              027D GR
+ 1A A$test_radio$1340                                              027E GR
+ 1A A$test_radio$1341                                              027F GR
+ 1A A$test_radio$1344                                              0281 GR
+ 1A A$test_radio$1345                                              0283 GR
+ 1A A$test_radio$1346                                              0285 GR
+ 1A A$test_radio$1347                                              0286 GR
+ 1A A$test_radio$1351                                              0288 GR
+ 1A A$test_radio$1352                                              028B GR
+ 1A A$test_radio$1353                                              028E GR
+ 1A A$test_radio$1356                                              0291 GR
+ 1A A$test_radio$1360                                              0293 GR
+ 1A A$test_radio$1363                                              0296 GR
+ 1A A$test_radio$1364                                              0298 GR
+ 1A A$test_radio$1368                                              029A GR
+ 1A A$test_radio$1369                                              029D GR
+ 1A A$test_radio$1370                                              02A0 GR
+ 1A A$test_radio$1372                                              02A3 GR
+ 1A A$test_radio$1373                                              02A5 GR
+ 1A A$test_radio$1374                                              02A7 GR
+ 1A A$test_radio$1375                                              02A9 GR
+ 1A A$test_radio$1376                                              02AB GR
+ 1A A$test_radio$1377                                              02AD GR
+ 1A A$test_radio$1378                                              02AF GR
+ 1A A$test_radio$1379                                              02B1 GR
+ 1A A$test_radio$1380                                              02B3 GR
+ 1A A$test_radio$1381                                              02B5 GR
+ 1A A$test_radio$1382                                              02B7 GR
+ 1A A$test_radio$1383                                              02B9 GR
+ 1A A$test_radio$1384                                              02BB GR
+ 1A A$test_radio$1385                                              02BD GR
+ 1A A$test_radio$1388                                              02BF GR
+ 1A A$test_radio$1410                                              02C0 GR
+ 1A A$test_radio$1413                                              02C3 GR
+ 1A A$test_radio$1414                                              02C6 GR
+ 1A A$test_radio$1415                                              02C8 GR
+ 1A A$test_radio$1416                                              02CB GR
+ 1A A$test_radio$1418                                              02CD GR
+ 1A A$test_radio$1422                                              02D0 GR
+ 1A A$test_radio$1423                                              02D3 GR
+ 1A A$test_radio$1424                                              02D5 GR
+ 1A A$test_radio$1425                                              02D7 GR
+ 1A A$test_radio$1426                                              02D9 GR
+ 1A A$test_radio$1427                                              02DA GR
+ 1A A$test_radio$1428                                              02DB GR
+ 1A A$test_radio$1429                                              02DC GR
+ 1A A$test_radio$1430                                              02DE GR
+ 1A A$test_radio$1431                                              02DF GR
+ 1A A$test_radio$1432                                              02E0 GR
+ 1A A$test_radio$1433                                              02E2 GR
+ 1A A$test_radio$1434                                              02E3 GR
+ 1A A$test_radio$1435                                              02E4 GR
+ 1A A$test_radio$1436                                              02E6 GR
+ 1A A$test_radio$1437                                              02E7 GR
+ 1A A$test_radio$1438                                              02E8 GR
+ 1A A$test_radio$1439                                              02EA GR
+ 1A A$test_radio$1440                                              02EB GR
+ 1A A$test_radio$1441                                              02EC GR
+ 1A A$test_radio$1442                                              02EE GR
+ 1A A$test_radio$1443                                              02EF GR
+ 1A A$test_radio$1444                                              02F1 GR
+ 1A A$test_radio$1445                                              02F2 GR
+ 1A A$test_radio$1446                                              02F3 GR
+ 1A A$test_radio$1447                                              02F4 GR
+ 1A A$test_radio$1448                                              02F5 GR
+ 1A A$test_radio$1449                                              02F6 GR
+ 1A A$test_radio$1450                                              02F8 GR
+ 1A A$test_radio$1453                                              02FB GR
+ 1A A$test_radio$1456                                              02FE GR
+ 1A A$test_radio$1459                                              0301 GR
+ 1A A$test_radio$1462                                              0303 GR
+ 1A A$test_radio$1463                                              0306 GR
+ 1A A$test_radio$1464                                              0309 GR
+ 1A A$test_radio$1465                                              030C GR
+ 1A A$test_radio$1466                                              030F GR
+ 1A A$test_radio$1470                                              0311 GR
+ 1A A$test_radio$1484                                              0312 GR
+ 1A A$test_radio$1487                                              0314 GR
+ 1A A$test_radio$1490                                              0317 GR
+ 1A A$test_radio$1493                                              031A GR
+ 1A A$test_radio$1494                                              031C GR
+ 1A A$test_radio$1497                                              031F GR
+ 1A A$test_radio$1500                                              0322 GR
+ 1A A$test_radio$1503                                              0325 GR
+ 1A A$test_radio$1506                                              0327 GR
+ 1A A$test_radio$1509                                              0329 GR
+ 1A A$test_radio$1512                                              032B GR
+ 1A A$test_radio$1513                                              032D GR
+ 1A A$test_radio$1514                                              032E GR
+ 1A A$test_radio$1515                                              032F GR
+ 1A A$test_radio$1516                                              0330 GR
+ 1A A$test_radio$1519                                              0331 GR
+ 1A A$test_radio$1522                                              0334 GR
+ 1A A$test_radio$1525                                              0337 GR
+ 1A A$test_radio$1526                                              033A GR
+ 1A A$test_radio$1529                                              033D GR
+ 1A A$test_radio$1530                                              0340 GR
+ 1A A$test_radio$1531                                              0343 GR
+ 1A A$test_radio$1532                                              0346 GR
+ 1A A$test_radio$1533                                              0349 GR
+ 1A A$test_radio$1536                                              034B GR
+ 1A A$test_radio$1542                                              034D GR
+ 1A A$test_radio$1545                                              0350 GR
+ 1A A$test_radio$1548                                              0353 GR
+ 1A A$test_radio$1551                                              0356 GR
+ 1A A$test_radio$1554                                              0359 GR
+ 1A A$test_radio$1555                                              035C GR
+ 1A A$test_radio$1556                                              035F GR
+ 1A A$test_radio$1559                                              0361 GR
+ 1A A$test_radio$1560                                              0364 GR
+ 1A A$test_radio$1561                                              0366 GR
+ 1A A$test_radio$1562                                              0369 GR
+ 1A A$test_radio$1563                                              036B GR
+ 1A A$test_radio$1564                                              036C GR
+ 1A A$test_radio$1565                                              036D GR
+ 1A A$test_radio$1566                                              036F GR
+ 1A A$test_radio$1569                                              0370 GR
+ 1A A$test_radio$1572                                              0373 GR
+ 1A A$test_radio$1573                                              0376 GR
+ 1A A$test_radio$1574                                              0377 GR
+ 1A A$test_radio$1575                                              0378 GR
+ 1A A$test_radio$1576                                              037A GR
+ 1A A$test_radio$1577                                              037D GR
+ 1A A$test_radio$1578                                              037F GR
+ 1A A$test_radio$1579                                              0381 GR
+ 1A A$test_radio$1582                                              0383 GR
+ 1A A$test_radio$1585                                              0385 GR
+ 11 A$test_radio$774                                               0000 GR
+ 11 A$test_radio$775                                               0003 GR
+ 11 A$test_radio$777                                               000B GR
+ 11 A$test_radio$779                                               0013 GR
+ 11 A$test_radio$781                                               001B GR
+ 11 A$test_radio$783                                               0023 GR
+ 11 A$test_radio$785                                               002B GR
+ 11 A$test_radio$787                                               0033 GR
+ 11 A$test_radio$789                                               003B GR
+ 11 A$test_radio$791                                               0043 GR
+ 11 A$test_radio$793                                               004B GR
+ 11 A$test_radio$795                                               0053 GR
+ 11 A$test_radio$797                                               005B GR
+ 11 A$test_radio$799                                               0063 GR
+ 11 A$test_radio$801                                               006B GR
+ 11 A$test_radio$803                                               0073 GR
+ 11 A$test_radio$805                                               007B GR
+ 11 A$test_radio$807                                               0083 GR
+ 18 A$test_radio$824                                               0000 GR
+ 18 A$test_radio$825                                               0002 GR
+ 18 A$test_radio$826                                               0003 GR
+ 18 A$test_radio$830                                               0004 GR
+ 18 A$test_radio$831                                               0006 GR
+ 18 A$test_radio$832                                               0007 GR
+ 18 A$test_radio$833                                               0008 GR
+ 18 A$test_radio$834                                               0009 GR
+ 18 A$test_radio$838                                               000A GR
+ 18 A$test_radio$839                                               000C GR
+ 18 A$test_radio$840                                               000D GR
+ 19 A$test_radio$842                                               0000 GR
+ 11 A$test_radio$849                                               0086 GR
+ 11 A$test_radio$851                                               0089 GR
+ 1A A$test_radio$878                                               0000 GR
+ 1A A$test_radio$879                                               0003 GR
+ 1A A$test_radio$880                                               0005 GR
+ 1A A$test_radio$881                                               0007 GR
+ 1A A$test_radio$883                                               000A GR
+ 1A A$test_radio$884                                               000C GR
+ 1A A$test_radio$888                                               000D GR
+ 1A A$test_radio$889                                               000F GR
+ 1A A$test_radio$890                                               0010 GR
+ 1A A$test_radio$893                                               0013 GR
+ 1A A$test_radio$894                                               0015 GR
+ 1A A$test_radio$895                                               0017 GR
+ 1A A$test_radio$896                                               0019 GR
+ 1A A$test_radio$897                                               001B GR
+ 1A A$test_radio$898                                               001D GR
+ 1A A$test_radio$899                                               001F GR
+ 1A A$test_radio$900                                               0021 GR
+ 1A A$test_radio$901                                               0023 GR
+ 1A A$test_radio$902                                               0025 GR
+ 1A A$test_radio$903                                               0027 GR
+ 1A A$test_radio$904                                               0028 GR
+ 1A A$test_radio$905                                               002A GR
+ 1A A$test_radio$906                                               002D GR
+ 1A A$test_radio$907                                               002F GR
+ 1A A$test_radio$908                                               0031 GR
+ 1A A$test_radio$909                                               0033 GR
+ 1A A$test_radio$910                                               0035 GR
+ 1A A$test_radio$911                                               0037 GR
+ 1A A$test_radio$915                                               003A GR
+ 1A A$test_radio$916                                               003C GR
+ 1A A$test_radio$917                                               003D GR
+ 1A A$test_radio$920                                               0040 GR
+ 1A A$test_radio$921                                               0042 GR
+ 1A A$test_radio$922                                               0044 GR
+ 1A A$test_radio$923                                               0046 GR
+ 1A A$test_radio$924                                               0048 GR
+ 1A A$test_radio$925                                               004A GR
+ 1A A$test_radio$926                                               004C GR
+ 1A A$test_radio$927                                               004E GR
+ 1A A$test_radio$928                                               0050 GR
+ 1A A$test_radio$929                                               0052 GR
+ 1A A$test_radio$930                                               0054 GR
+ 1A A$test_radio$931                                               0055 GR
+ 1A A$test_radio$932                                               0057 GR
+ 1A A$test_radio$933                                               005A GR
+ 1A A$test_radio$934                                               005C GR
+ 1A A$test_radio$935                                               005E GR
+ 1A A$test_radio$936                                               0060 GR
+ 1A A$test_radio$937                                               0062 GR
+ 1A A$test_radio$938                                               0064 GR
+ 1A A$test_radio$939                                               0066 GR
+ 1A A$test_radio$943                                               0069 GR
+ 1A A$test_radio$944                                               006B GR
+ 1A A$test_radio$945                                               006C GR
+ 1A A$test_radio$948                                               006F GR
+ 1A A$test_radio$949                                               0071 GR
+ 1A A$test_radio$952                                               0073 GR
+ 1A A$test_radio$953                                               0075 GR
+ 1A A$test_radio$954                                               0076 GR
+ 1A A$test_radio$955                                               0078 GR
+ 1A A$test_radio$956                                               0079 GR
+ 1A A$test_radio$957                                               007A GR
+ 1A A$test_radio$958                                               007C GR
+ 1A A$test_radio$959                                               007E GR
+ 1A A$test_radio$960                                               0080 GR
+ 1A A$test_radio$961                                               0082 GR
+ 1A A$test_radio$962                                               0084 GR
+ 1A A$test_radio$963                                               0086 GR
+ 1A A$test_radio$964                                               0088 GR
+ 1A A$test_radio$965                                               008A GR
+ 1A A$test_radio$966                                               008C GR
+ 1A A$test_radio$967                                               008E GR
+ 1A A$test_radio$968                                               0090 GR
+ 1A A$test_radio$969                                               0092 GR
+ 1A A$test_radio$970                                               0094 GR
+ 1A A$test_radio$971                                               0096 GR
+ 1A A$test_radio$972                                               0098 GR
+ 1A A$test_radio$973                                               0099 GR
+ 1A A$test_radio$974                                               009B GR
+ 1A A$test_radio$975                                               009E GR
+ 1A A$test_radio$976                                               00A0 GR
+ 1A A$test_radio$977                                               00A2 GR
+ 1A A$test_radio$978                                               00A4 GR
+ 1A A$test_radio$979                                               00A6 GR
+ 1A A$test_radio$980                                               00A8 GR
+ 1A A$test_radio$981                                               00AA GR
+ 1A A$test_radio$985                                               00AC GR
+ 1A A$test_radio$986                                               00AE GR
+ 1A A$test_radio$987                                               00AF GR
+ 1A A$test_radio$990                                               00B2 GR
+ 1A A$test_radio$991                                               00B4 GR
+ 1A A$test_radio$992                                               00B6 GR
+ 1A A$test_radio$993                                               00B8 GR
+ 1A A$test_radio$994                                               00BA GR
+ 1A A$test_radio$995                                               00BC GR
+ 1A A$test_radio$996                                               00BE GR
+ 1A A$test_radio$997                                               00C0 GR
+ 1A A$test_radio$998                                               00C2 GR
+ 1A A$test_radio$999                                               00C4 GR
+    A.0                                                            00E0 
+    A.1                                                            00E1 
+    A.2                                                            00E2 
+    A.3                                                            00E3 
+    A.4                                                            00E4 
+    A.5                                                            00E5 
+    A.6                                                            00E6 
+    A.7                                                            00E7 
+    AC                                                             00D6 
+    ACC                                                            00E0 
+    ACC.0                                                          00E0 
+    ACC.1                                                          00E1 
+    ACC.2                                                          00E2 
+    ACC.3                                                          00E3 
+    ACC.4                                                          00E4 
+    ACC.5                                                          00E5 
+    ACC.6                                                          00E6 
+    ACC.7                                                          00E7 
+    B                                                              00F0 
+    B.0                                                            00F0 
+    B.1                                                            00F1 
+    B.2                                                            00F2 
+    B.3                                                            00F3 
+    B.4                                                            00F4 
+    B.5                                                            00F5 
+    B.6                                                            00F6 
+    B.7                                                            00F7 
+ 18 C$test_radio.c$105$1$1                                      =  0000 GR
+ 18 C$test_radio.c$107$1$1                                      =  0004 GR
+ 18 C$test_radio.c$109$1$1                                      =  000A GR
+ 1A C$test_radio.c$111$0$0                                      =  0000 GR
+ 1A C$test_radio.c$113$1$1                                      =  0000 GR
+ 1A C$test_radio.c$118$2$2                                      =  000D GR
+ 1A C$test_radio.c$120$3$3                                      =  0013 GR
+ 1A C$test_radio.c$122$2$2                                      =  003A GR
+ 1A C$test_radio.c$124$3$4                                      =  0040 GR
+ 1A C$test_radio.c$126$2$2                                      =  0069 GR
+ 1A C$test_radio.c$129$3$5                                      =  0073 GR
+ 1A C$test_radio.c$130$3$5                                      =  006F GR
+ 1A C$test_radio.c$132$2$2                                      =  00AC GR
+ 1A C$test_radio.c$134$3$6                                      =  00B2 GR
+ 1A C$test_radio.c$138$3$7                                      =  00DA GR
+ 1A C$test_radio.c$141$2$2                                      =  0100 GR
+ 1A C$test_radio.c$143$2$1                                      =  0107 GR
+ 1A C$test_radio.c$165$2$1                                      =  010A GR
+ 1A C$test_radio.c$169$1$1                                      =  0129 GR
+ 1A C$test_radio.c$172$1$1                                      =  012B GR
+ 1A C$test_radio.c$176$2$2                                      =  0137 GR
+ 1A C$test_radio.c$181$3$3                                      =  014B GR
+ 1A C$test_radio.c$182$3$3                                      =  016C GR
+ 1A C$test_radio.c$184$3$3                                      =  0184 GR
+ 1A C$test_radio.c$186$4$4                                      =  0187 GR
+ 1A C$test_radio.c$191$3$3                                      =  018C GR
+ 1A C$test_radio.c$193$4$5                                      =  0190 GR
+ 1A C$test_radio.c$194$4$5                                      =  01A3 GR
+ 1A C$test_radio.c$198$4$6                                      =  01CC GR
+ 1A C$test_radio.c$199$4$6                                      =  01E2 GR
+ 1A C$test_radio.c$203$3$3                                      =  01FC GR
+ 1A C$test_radio.c$205$4$7                                      =  020B GR
+ 1A C$test_radio.c$209$4$8                                      =  0213 GR
+ 1A C$test_radio.c$213$3$3                                      =  021E GR
+ 1A C$test_radio.c$215$4$9                                      =  022B GR
+ 1A C$test_radio.c$216$4$9                                      =  0230 GR
+ 1A C$test_radio.c$220$3$3                                      =  0232 GR
+ 1A C$test_radio.c$223$3$3                                      =  0235 GR
+ 1A C$test_radio.c$226$4$10                                     =  023A GR
+ 1A C$test_radio.c$228$5$11                                     =  0251 GR
+ 1A C$test_radio.c$229$5$11                                     =  0253 GR
+ 1A C$test_radio.c$233$5$12                                     =  025A GR
+ 1A C$test_radio.c$236$4$10                                     =  0260 GR
+ 1A C$test_radio.c$237$4$10                                     =  0266 GR
+ 1A C$test_radio.c$238$4$10                                     =  027A GR
+ 1A C$test_radio.c$240$4$10                                     =  027D GR
+ 1A C$test_radio.c$242$5$13                                     =  0281 GR
+ 1A C$test_radio.c$250$3$14                                     =  0288 GR
+ 1A C$test_radio.c$251$3$14                                     =  0291 GR
+ 1A C$test_radio.c$255$1$1                                      =  0293 GR
+ 1A C$test_radio.c$258$2$15                                     =  0296 GR
+ 1A C$test_radio.c$262$2$16                                     =  029A GR
+ 1A C$test_radio.c$264$1$1                                      =  02BF GR
+ 1A C$test_radio.c$280$1$1                                      =  02C0 GR
+ 1A C$test_radio.c$282$1$1                                      =  02C0 GR
+ 1A C$test_radio.c$283$2$2                                      =  02C3 GR
+ 1A C$test_radio.c$287$1$1                                      =  02D0 GR
+ 1A C$test_radio.c$288$1$1                                      =  02FB GR
+ 1A C$test_radio.c$291$3$4                                      =  02FE GR
+ 1A C$test_radio.c$294$2$3                                      =  0301 GR
+ 1A C$test_radio.c$295$2$3                                      =  0303 GR
+ 1A C$test_radio.c$297$2$1                                      =  0311 GR
+ 1A C$test_radio.c$313$2$1                                      =  0312 GR
+ 1A C$test_radio.c$316$1$1                                      =  0312 GR
+ 1A C$test_radio.c$319$1$1                                      =  0314 GR
+ 1A C$test_radio.c$320$1$1                                      =  0317 GR
+ 1A C$test_radio.c$322$1$1                                      =  031A GR
+ 1A C$test_radio.c$323$1$1                                      =  031F GR
+ 1A C$test_radio.c$324$1$1                                      =  0322 GR
+ 1A C$test_radio.c$327$1$1                                      =  0325 GR
+ 1A C$test_radio.c$328$1$1                                      =  0327 GR
+ 1A C$test_radio.c$329$1$1                                      =  0329 GR
+ 1A C$test_radio.c$331$1$1                                      =  032B GR
+ 1A C$test_radio.c$332$1$1                                      =  0331 GR
+ 1A C$test_radio.c$333$1$1                                      =  0334 GR
+ 1A C$test_radio.c$334$1$1                                      =  0337 GR
+ 1A C$test_radio.c$336$1$1                                      =  033D GR
+ 1A C$test_radio.c$339$1$1                                      =  034B GR
+ 1A C$test_radio.c$342$1$1                                      =  034D GR
+ 1A C$test_radio.c$344$2$2                                      =  034D GR
+ 1A C$test_radio.c$345$2$2                                      =  0350 GR
+ 1A C$test_radio.c$346$2$2                                      =  0353 GR
+ 1A C$test_radio.c$349$2$2                                      =  0356 GR
+ 1A C$test_radio.c$353$3$3                                      =  0359 GR
+ 1A C$test_radio.c$356$4$4                                      =  0361 GR
+ 1A C$test_radio.c$359$4$4                                      =  0370 GR
+ 1A C$test_radio.c$360$4$4                                      =  0373 GR
+ 1A C$test_radio.c$363$4$4                                      =  0383 GR
+ 1A C$test_radio.c$367$1$1                                      =  0385 GR
+    CPRL2                                                          00C8 
+    CT2                                                            00C9 
+    CY                                                             00D7 
+    DPH                                                            0083 
+    DPL                                                            0082 
+    EA                                                             00AF 
+    ES                                                             00AC 
+    ET0                                                            00A9 
+    ET1                                                            00AB 
+    ET2                                                            00AD 
+    EX0                                                            00A8 
+    EX1                                                            00AA 
+    EXEN2                                                          00CB 
+    EXF2                                                           00CE 
+    F0                                                             00D5 
+    Ftest_radio$AC$0$0                                          =  00D6 G
+    Ftest_radio$ACC$0$0                                         =  00E0 G
+    Ftest_radio$ACC_0$0$0                                       =  00E0 G
+    Ftest_radio$ACC_1$0$0                                       =  00E1 G
+    Ftest_radio$ACC_2$0$0                                       =  00E2 G
+    Ftest_radio$ACC_3$0$0                                       =  00E3 G
+    Ftest_radio$ACC_4$0$0                                       =  00E4 G
+    Ftest_radio$ACC_5$0$0                                       =  00E5 G
+    Ftest_radio$ACC_6$0$0                                       =  00E6 G
+    Ftest_radio$ACC_7$0$0                                       =  00E7 G
+    Ftest_radio$ADC$0$0                                         =  FFFFBBBA G
+    Ftest_radio$ADCCFG$0$0                                      =  00F2 G
+    Ftest_radio$ADCCON1$0$0                                     =  00B4 G
+    Ftest_radio$ADCCON2$0$0                                     =  00B5 G
+    Ftest_radio$ADCCON3$0$0                                     =  00B6 G
+    Ftest_radio$ADCH$0$0                                        =  00BB G
+    Ftest_radio$ADCIE$0$0                                       =  00A9 G
+    Ftest_radio$ADCIF$0$0                                       =  008D G
+    Ftest_radio$ADCL$0$0                                        =  00BA G
+    Ftest_radio$ADDR$0$0                                        =  DF05 G
+    Ftest_radio$AGCCTRL0$0$0                                    =  DF19 G
+    Ftest_radio$AGCCTRL1$0$0                                    =  DF18 G
+    Ftest_radio$AGCCTRL2$0$0                                    =  DF17 G
+    Ftest_radio$B$0$0                                           =  00F0 G
+    Ftest_radio$BSCFG$0$0                                       =  DF16 G
+    Ftest_radio$B_0$0$0                                         =  00F0 G
+    Ftest_radio$B_1$0$0                                         =  00F1 G
+    Ftest_radio$B_2$0$0                                         =  00F2 G
+    Ftest_radio$B_3$0$0                                         =  00F3 G
+    Ftest_radio$B_4$0$0                                         =  00F4 G
+    Ftest_radio$B_5$0$0                                         =  00F5 G
+    Ftest_radio$B_6$0$0                                         =  00F6 G
+    Ftest_radio$B_7$0$0                                         =  00F7 G
+    Ftest_radio$CHANNR$0$0                                      =  DF06 G
+    Ftest_radio$CLKCON$0$0                                      =  00C6 G
+    Ftest_radio$CY$0$0                                          =  00D7 G
+ 1B Ftest_radio$DAC_ADDRESS$0$0                                 =  0000 GR
+ 1B Ftest_radio$DAC_COMMAND$0$0                                 =  0001 GR
+    Ftest_radio$DEVIATN$0$0                                     =  DF11 G
+    Ftest_radio$DMA0CFG$0$0                                     =  FFFFD5D4 G
+    Ftest_radio$DMA0CFGH$0$0                                    =  00D5 G
+    Ftest_radio$DMA0CFGL$0$0                                    =  00D4 G
+    Ftest_radio$DMA1CFG$0$0                                     =  FFFFD3D2 G
+    Ftest_radio$DMA1CFGH$0$0                                    =  00D3 G
+    Ftest_radio$DMA1CFGL$0$0                                    =  00D2 G
+    Ftest_radio$DMAARM$0$0                                      =  00D6 G
+    Ftest_radio$DMAIE$0$0                                       =  00B8 G
+    Ftest_radio$DMAIF$0$0                                       =  00C0 G
+    Ftest_radio$DMAIRQ$0$0                                      =  00D1 G
+    Ftest_radio$DMAREQ$0$0                                      =  00D7 G
+    Ftest_radio$DPH0$0$0                                        =  0083 G
+    Ftest_radio$DPH1$0$0                                        =  0085 G
+    Ftest_radio$DPL0$0$0                                        =  0082 G
+    Ftest_radio$DPL1$0$0                                        =  0084 G
+    Ftest_radio$DPS$0$0                                         =  0092 G
+    Ftest_radio$EA$0$0                                          =  00AF G
+    Ftest_radio$ENCCS$0$0                                       =  00B3 G
+    Ftest_radio$ENCDI$0$0                                       =  00B1 G
+    Ftest_radio$ENCDO$0$0                                       =  00B2 G
+    Ftest_radio$ENCIE$0$0                                       =  00AC G
+    Ftest_radio$ENCIF_0$0$0                                     =  0098 G
+    Ftest_radio$ENCIF_1$0$0                                     =  0099 G
+    Ftest_radio$ENDIAN$0$0                                      =  0095 G
+    Ftest_radio$F0$0$0                                          =  00D5 G
+    Ftest_radio$F1$0$0                                          =  00D1 G
+    Ftest_radio$FADDR$0$0                                       =  FFFFADAC G
+    Ftest_radio$FADDRH$0$0                                      =  00AD G
+    Ftest_radio$FADDRL$0$0                                      =  00AC G
+    Ftest_radio$FCTL$0$0                                        =  00AE G
+    Ftest_radio$FOCCFG$0$0                                      =  DF15 G
+    Ftest_radio$FREND0$0$0                                      =  DF1B G
+    Ftest_radio$FREND1$0$0                                      =  DF1A G
+    Ftest_radio$FREQ0$0$0                                       =  DF0B G
+    Ftest_radio$FREQ1$0$0                                       =  DF0A G
+    Ftest_radio$FREQ2$0$0                                       =  DF09 G
+    Ftest_radio$FREQEST$0$0                                     =  DF38 G
+    Ftest_radio$FSCAL0$0$0                                      =  DF1F G
+    Ftest_radio$FSCAL1$0$0                                      =  DF1E G
+    Ftest_radio$FSCAL2$0$0                                      =  DF1D G
+    Ftest_radio$FSCAL3$0$0                                      =  DF1C G
+    Ftest_radio$FSCTRL0$0$0                                     =  DF08 G
+    Ftest_radio$FSCTRL1$0$0                                     =  DF07 G
+    Ftest_radio$FWDATA$0$0                                      =  00AF G
+    Ftest_radio$FWT$0$0                                         =  00AB G
+    Ftest_radio$I2SCFG0$0$0                                     =  DF40 G
+    Ftest_radio$I2SCFG1$0$0                                     =  DF41 G
+    Ftest_radio$I2SCLKF0$0$0                                    =  DF46 G
+    Ftest_radio$I2SCLKF1$0$0                                    =  DF47 G
+    Ftest_radio$I2SCLKF2$0$0                                    =  DF48 G
+    Ftest_radio$I2SDATH$0$0                                     =  DF43 G
+    Ftest_radio$I2SDATL$0$0                                     =  DF42 G
+    Ftest_radio$I2SSTAT$0$0                                     =  DF45 G
+    Ftest_radio$I2SWCNT$0$0                                     =  DF44 G
+    Ftest_radio$IEN0$0$0                                        =  00A8 G
+    Ftest_radio$IEN1$0$0                                        =  00B8 G
+    Ftest_radio$IEN2$0$0                                        =  009A G
+    Ftest_radio$IOCFG0$0$0                                      =  DF31 G
+    Ftest_radio$IOCFG1$0$0                                      =  DF30 G
+    Ftest_radio$IOCFG2$0$0                                      =  DF2F G
+    Ftest_radio$IP0$0$0                                         =  00A9 G
+    Ftest_radio$IP1$0$0                                         =  00B9 G
+    Ftest_radio$IRCON$0$0                                       =  00C0 G
+    Ftest_radio$IRCON2$0$0                                      =  00E8 G
+    Ftest_radio$LQI$0$0                                         =  DF39 G
+    Ftest_radio$MARCSTATE$0$0                                   =  DF3B G
+    Ftest_radio$MCSM0$0$0                                       =  DF14 G
+    Ftest_radio$MCSM1$0$0                                       =  DF13 G
+    Ftest_radio$MCSM2$0$0                                       =  DF12 G
+    Ftest_radio$MDMCFG0$0$0                                     =  DF10 G
+    Ftest_radio$MDMCFG1$0$0                                     =  DF0F G
+    Ftest_radio$MDMCFG2$0$0                                     =  DF0E G
+    Ftest_radio$MDMCFG3$0$0                                     =  DF0D G
+    Ftest_radio$MDMCFG4$0$0                                     =  DF0C G
+    Ftest_radio$MEMCTR$0$0                                      =  00C7 G
+    Ftest_radio$MPAGE$0$0                                       =  0093 G
+    Ftest_radio$OV$0$0                                          =  00D2 G
+    Ftest_radio$OVFIM$0$0                                       =  00DE G
+    Ftest_radio$P$0$0                                           =  00D0 G
+    Ftest_radio$P0$0$0                                          =  0080 G
+    Ftest_radio$P0DIR$0$0                                       =  00FD G
+    Ftest_radio$P0IE$0$0                                        =  00BD G
+    Ftest_radio$P0IF$0$0                                        =  00C5 G
+    Ftest_radio$P0IFG$0$0                                       =  0089 G
+    Ftest_radio$P0INP$0$0                                       =  008F G
+    Ftest_radio$P0SEL$0$0                                       =  00F3 G
+    Ftest_radio$P0_0$0$0                                        =  0080 G
+    Ftest_radio$P0_1$0$0                                        =  0081 G
+    Ftest_radio$P0_2$0$0                                        =  0082 G
+    Ftest_radio$P0_3$0$0                                        =  0083 G
+    Ftest_radio$P0_4$0$0                                        =  0084 G
+    Ftest_radio$P0_5$0$0                                        =  0085 G
+    Ftest_radio$P0_6$0$0                                        =  0086 G
+    Ftest_radio$P0_7$0$0                                        =  0087 G
+    Ftest_radio$P1$0$0                                          =  0090 G
+    Ftest_radio$P1DIR$0$0                                       =  00FE G
+    Ftest_radio$P1IEN$0$0                                       =  008D G
+    Ftest_radio$P1IF$0$0                                        =  00EB G
+    Ftest_radio$P1IFG$0$0                                       =  008A G
+    Ftest_radio$P1INP$0$0                                       =  00F6 G
+    Ftest_radio$P1SEL$0$0                                       =  00F4 G
+    Ftest_radio$P1_0$0$0                                        =  0090 G
+    Ftest_radio$P1_1$0$0                                        =  0091 G
+    Ftest_radio$P1_2$0$0                                        =  0092 G
+    Ftest_radio$P1_3$0$0                                        =  0093 G
+    Ftest_radio$P1_4$0$0                                        =  0094 G
+    Ftest_radio$P1_5$0$0                                        =  0095 G
+    Ftest_radio$P1_6$0$0                                        =  0096 G
+    Ftest_radio$P1_7$0$0                                        =  0097 G
+    Ftest_radio$P2$0$0                                          =  00A0 G
+    Ftest_radio$P2DIR$0$0                                       =  00FF G
+    Ftest_radio$P2IF$0$0                                        =  00E8 G
+    Ftest_radio$P2IFG$0$0                                       =  008B G
+    Ftest_radio$P2INP$0$0                                       =  00F7 G
+    Ftest_radio$P2SEL$0$0                                       =  00F5 G
+    Ftest_radio$P2_0$0$0                                        =  00A0 G
+    Ftest_radio$P2_1$0$0                                        =  00A1 G
+    Ftest_radio$P2_2$0$0                                        =  00A2 G
+    Ftest_radio$P2_3$0$0                                        =  00A3 G
+    Ftest_radio$P2_4$0$0                                        =  00A4 G
+    Ftest_radio$P2_5$0$0                                        =  00A5 G
+    Ftest_radio$P2_6$0$0                                        =  00A6 G
+    Ftest_radio$P2_7$0$0                                        =  00A7 G
+    Ftest_radio$PARTNUM$0$0                                     =  DF36 G
+    Ftest_radio$PA_TABLE0$0$0                                   =  DF2E G
+    Ftest_radio$PCON$0$0                                        =  0087 G
+    Ftest_radio$PERCFG$0$0                                      =  00F1 G
+    Ftest_radio$PICTL$0$0                                       =  008C G
+    Ftest_radio$PKTCTRL0$0$0                                    =  DF04 G
+    Ftest_radio$PKTCTRL1$0$0                                    =  DF03 G
+    Ftest_radio$PKTLEN$0$0                                      =  DF02 G
+    Ftest_radio$PKTSTATUS$0$0                                   =  DF3C G
+    Ftest_radio$PSW$0$0                                         =  00D0 G
+    Ftest_radio$RFD$0$0                                         =  00D9 G
+    Ftest_radio$RFIF$0$0                                        =  00E9 G
+    Ftest_radio$RFIM$0$0                                        =  0091 G
+    Ftest_radio$RFST$0$0                                        =  00E1 G
+    Ftest_radio$RFTXRXIE$0$0                                    =  00A8 G
+    Ftest_radio$RFTXRXIF$0$0                                    =  0089 G
+    Ftest_radio$RNDH$0$0                                        =  00BD G
+    Ftest_radio$RNDL$0$0                                        =  00BC G
+    Ftest_radio$RS0$0$0                                         =  00D3 G
+    Ftest_radio$RS1$0$0                                         =  00D4 G
+    Ftest_radio$RSSI$0$0                                        =  DF3A G
+    Ftest_radio$S0CON$0$0                                       =  0098 G
+    Ftest_radio$S1CON$0$0                                       =  009B G
+    Ftest_radio$SLEEP$0$0                                       =  00BE G
+    Ftest_radio$SP$0$0                                          =  0081 G
+    Ftest_radio$STIE$0$0                                        =  00AD G
+    Ftest_radio$STIF$0$0                                        =  00C7 G
+    Ftest_radio$SYNC0$0$0                                       =  DF01 G
+    Ftest_radio$SYNC1$0$0                                       =  DF00 G
+    Ftest_radio$T1CC0H$0$0                                      =  00DB G
+    Ftest_radio$T1CC0L$0$0                                      =  00DA G
+    Ftest_radio$T1CC1H$0$0                                      =  00DD G
+    Ftest_radio$T1CC1L$0$0                                      =  00DC G
+    Ftest_radio$T1CC2H$0$0                                      =  00DF G
+    Ftest_radio$T1CC2L$0$0                                      =  00DE G
+    Ftest_radio$T1CCTL0$0$0                                     =  00E5 G
+    Ftest_radio$T1CCTL1$0$0                                     =  00E6 G
+    Ftest_radio$T1CCTL2$0$0                                     =  00E7 G
+    Ftest_radio$T1CNTH$0$0                                      =  00E3 G
+    Ftest_radio$T1CNTL$0$0                                      =  00E2 G
+    Ftest_radio$T1CTL$0$0                                       =  00E4 G
+    Ftest_radio$T1IE$0$0                                        =  00B9 G
+    Ftest_radio$T1IF$0$0                                        =  00C1 G
+    Ftest_radio$T2CT$0$0                                        =  009C G
+    Ftest_radio$T2CTL$0$0                                       =  009E G
+    Ftest_radio$T2IE$0$0                                        =  00BA G
+    Ftest_radio$T2IF$0$0                                        =  00C2 G
+    Ftest_radio$T2PR$0$0                                        =  009D G
+    Ftest_radio$T3CC0$0$0                                       =  00CD G
+    Ftest_radio$T3CC1$0$0                                       =  00CF G
+    Ftest_radio$T3CCTL0$0$0                                     =  00CC G
+    Ftest_radio$T3CCTL1$0$0                                     =  00CE G
+    Ftest_radio$T3CH0IF$0$0                                     =  00D9 G
+    Ftest_radio$T3CH1IF$0$0                                     =  00DA G
+    Ftest_radio$T3CNT$0$0                                       =  00CA G
+    Ftest_radio$T3CTL$0$0                                       =  00CB G
+    Ftest_radio$T3IE$0$0                                        =  00BB G
+    Ftest_radio$T3IF$0$0                                        =  00C3 G
+    Ftest_radio$T3OVFIF$0$0                                     =  00D8 G
+    Ftest_radio$T4CC0$0$0                                       =  00ED G
+    Ftest_radio$T4CC1$0$0                                       =  00EF G
+    Ftest_radio$T4CCTL0$0$0                                     =  00EC G
+    Ftest_radio$T4CCTL1$0$0                                     =  00EE G
+    Ftest_radio$T4CH0IF$0$0                                     =  00DC G
+    Ftest_radio$T4CH1IF$0$0                                     =  00DD G
+    Ftest_radio$T4CNT$0$0                                       =  00EA G
+    Ftest_radio$T4CTL$0$0                                       =  00EB G
+    Ftest_radio$T4IE$0$0                                        =  00BC G
+    Ftest_radio$T4IF$0$0                                        =  00C4 G
+    Ftest_radio$T4OVFIF$0$0                                     =  00DB G
+    Ftest_radio$TCON$0$0                                        =  0088 G
+    Ftest_radio$TEST0$0$0                                       =  DF25 G
+    Ftest_radio$TEST1$0$0                                       =  DF24 G
+    Ftest_radio$TEST2$0$0                                       =  DF23 G
+    Ftest_radio$TIMIF$0$0                                       =  00D8 G
+    Ftest_radio$U0BAUD$0$0                                      =  00C2 G
+    Ftest_radio$U0CSR$0$0                                       =  0086 G
+    Ftest_radio$U0DBUF$0$0                                      =  00C1 G
+    Ftest_radio$U0GCR$0$0                                       =  00C5 G
+    Ftest_radio$U0UCR$0$0                                       =  00C4 G
+    Ftest_radio$U1ACTIVE$0$0                                    =  00F8 G
+    Ftest_radio$U1BAUD$0$0                                      =  00FA G
+    Ftest_radio$U1CSR$0$0                                       =  00F8 G
+    Ftest_radio$U1DBUF$0$0                                      =  00F9 G
+    Ftest_radio$U1ERR$0$0                                       =  00FB G
+    Ftest_radio$U1FE$0$0                                        =  00FC G
+    Ftest_radio$U1GCR$0$0                                       =  00FC G
+    Ftest_radio$U1MODE$0$0                                      =  00FF G
+    Ftest_radio$U1RE$0$0                                        =  00FE G
+    Ftest_radio$U1RX_BYTE$0$0                                   =  00FA G
+    Ftest_radio$U1SLAVE$0$0                                     =  00FD G
+    Ftest_radio$U1TX_BYTE$0$0                                   =  00F9 G
+    Ftest_radio$U1UCR$0$0                                       =  00FB G
+    Ftest_radio$URX0IE$0$0                                      =  00AA G
+    Ftest_radio$URX0IF$0$0                                      =  008B G
+    Ftest_radio$URX1IE$0$0                                      =  00AB G
+    Ftest_radio$URX1IF$0$0                                      =  008F G
+    Ftest_radio$USBADDR$0$0                                     =  DE00 G
+    Ftest_radio$USBCIE$0$0                                      =  DE0B G
+    Ftest_radio$USBCIF$0$0                                      =  DE06 G
+    Ftest_radio$USBCNTH$0$0                                     =  DE17 G
+    Ftest_radio$USBCNTL$0$0                                     =  DE16 G
+    Ftest_radio$USBCSIH$0$0                                     =  DE12 G
+    Ftest_radio$USBCSIL$0$0                                     =  DE11 G
+    Ftest_radio$USBCSOH$0$0                                     =  DE15 G
+    Ftest_radio$USBCSOL$0$0                                     =  DE14 G
+    Ftest_radio$USBF0$0$0                                       =  DE20 G
+    Ftest_radio$USBF1$0$0                                       =  DE22 G
+    Ftest_radio$USBF2$0$0                                       =  DE24 G
+    Ftest_radio$USBF3$0$0                                       =  DE26 G
+    Ftest_radio$USBF4$0$0                                       =  DE28 G
+    Ftest_radio$USBF5$0$0                                       =  DE2A G
+    Ftest_radio$USBFRMH$0$0                                     =  DE0D G
+    Ftest_radio$USBFRML$0$0                                     =  DE0C G
+    Ftest_radio$USBIIE$0$0                                      =  DE07 G
+    Ftest_radio$USBIIF$0$0                                      =  DE02 G
+    Ftest_radio$USBINDEX$0$0                                    =  DE0E G
+    Ftest_radio$USBMAXI$0$0                                     =  DE10 G
+    Ftest_radio$USBMAXO$0$0                                     =  DE13 G
+    Ftest_radio$USBOIE$0$0                                      =  DE09 G
+    Ftest_radio$USBOIF$0$0                                      =  DE04 G
+    Ftest_radio$USBPOW$0$0                                      =  DE01 G
+    Ftest_radio$UTX0IF$0$0                                      =  00E9 G
+    Ftest_radio$UTX1IF$0$0                                      =  00EA G
+    Ftest_radio$VCO_VC_DAC$0$0                                  =  DF3D G
+    Ftest_radio$VERSION$0$0                                     =  DF37 G
+    Ftest_radio$WDCTL$0$0                                       =  00C9 G
+    Ftest_radio$WDTIF$0$0                                       =  00EC G
+    Ftest_radio$WORCTRL$0$0                                     =  00A2 G
+    Ftest_radio$WOREVT0$0$0                                     =  00A3 G
+    Ftest_radio$WOREVT1$0$0                                     =  00A4 G
+    Ftest_radio$WORIRQ$0$0                                      =  00A1 G
+    Ftest_radio$WORTIME0$0$0                                    =  00A5 G
+    Ftest_radio$WORTIME1$0$0                                    =  00A6 G
+    Ftest_radio$_IEN06$0$0                                      =  00AE G
+    Ftest_radio$_IEN16$0$0                                      =  00BE G
+    Ftest_radio$_IEN17$0$0                                      =  00BF G
+    Ftest_radio$_IRCON25$0$0                                    =  00ED G
+    Ftest_radio$_IRCON26$0$0                                    =  00EE G
+    Ftest_radio$_IRCON27$0$0                                    =  00EF G
+    Ftest_radio$_IRCON6$0$0                                     =  00C6 G
+    Ftest_radio$_SOCON2$0$0                                     =  009A G
+    Ftest_radio$_SOCON3$0$0                                     =  009B G
+    Ftest_radio$_SOCON4$0$0                                     =  009C G
+    Ftest_radio$_SOCON5$0$0                                     =  009D G
+    Ftest_radio$_SOCON6$0$0                                     =  009E G
+    Ftest_radio$_SOCON7$0$0                                     =  009F G
+    Ftest_radio$_TCON_0$0$0                                     =  0088 G
+    Ftest_radio$_TCON_2$0$0                                     =  008A G
+    Ftest_radio$_TCON_4$0$0                                     =  008C G
+    Ftest_radio$_TCON_6$0$0                                     =  008E G
+    Ftest_radio$_TIMIF7$0$0                                     =  00DF G
+ 1B Ftest_radio$_str_0$0$0                                      =  0002 GR
+ 1B Ftest_radio$_str_1$0$0                                      =  0016 GR
+ 1B Ftest_radio$_str_2$0$0                                      =  0020 GR
+ 1B Ftest_radio$_str_3$0$0                                      =  004D GR
+ 1B Ftest_radio$_str_4$0$0                                      =  005D GR
+  7 Ftest_radio$accSample$0$0                                   =  0000 GR
+  D Ftest_radio$cause$0$0                                       =  0002 GR
+  C Ftest_radio$dacNAKd$0$0                                     =  0002 GR
+  D Ftest_radio$dummySample$0$0                                 =  0003 GR
+  C Ftest_radio$initComplete$0$0                                =  0003 GR
+  7 Ftest_radio$isrCounter$0$0                                  =  0003 GR
+  C Ftest_radio$lostSample$0$0                                  =  0001 GR
+  7 Ftest_radio$operationalTimeStamp$0$0                        =  0004 GR
+  D Ftest_radio$packet$0$0                                      =  0000 GR
+  D Ftest_radio$packetID$0$0                                    =  0005 GR
+  7 Ftest_radio$sampleIndex$0$0                                 =  0002 GR
+  C Ftest_radio$sufficientRxBuffer$0$0                          =  0000 GR
+ 1A Ftest_radio$updateLeds$0$0                                  =  02C0 GR
+ 1A G$ISR_T3$0$0                                                =  010A GR
+ 1A G$main$0$0                                                  =  0312 GR
+ 1A G$reportResults$0$0                                         =  0000 GR
+    IE                                                             00A8 
+    IE.0                                                           00A8 
+    IE.1                                                           00A9 
+    IE.2                                                           00AA 
+    IE.3                                                           00AB 
+    IE.4                                                           00AC 
+    IE.5                                                           00AD 
+    IE.7                                                           00AF 
+    IE0                                                            0089 
+    IE1                                                            008B 
+    INT0                                                           00B2 
+    INT1                                                           00B3 
+    IP                                                             00B8 
+    IP.0                                                           00B8 
+    IP.1                                                           00B9 
+    IP.2                                                           00BA 
+    IP.3                                                           00BB 
+    IP.4                                                           00BC 
+    IP.5                                                           00BD 
+    IT0                                                            0088 
+    IT1                                                            008A 
+  C LISR_T3$sloc0$1$0                                           =  0004 GR
+  C Lmain$sloc0$1$0                                             =  0005 GR
+  E LreportResults$buffer$2$2                                   =  0000 GR
+    OV                                                             00D2 
+    P                                                              00D0 
+    P0                                                             0080 
+    P0.0                                                           0080 
+    P0.1                                                           0081 
+    P0.2                                                           0082 
+    P0.3                                                           0083 
+    P0.4                                                           0084 
+    P0.5                                                           0085 
+    P0.6                                                           0086 
+    P0.7                                                           0087 
+    P1                                                             0090 
+    P1.0                                                           0090 
+    P1.1                                                           0091 
+    P1.2                                                           0092 
+    P1.3                                                           0093 
+    P1.4                                                           0094 
+    P1.5                                                           0095 
+    P1.6                                                           0096 
+    P1.7                                                           0097 
+    P2                                                             00A0 
+    P2.0                                                           00A0 
+    P2.1                                                           00A1 
+    P2.2                                                           00A2 
+    P2.3                                                           00A3 
+    P2.4                                                           00A4 
+    P2.5                                                           00A5 
+    P2.6                                                           00A6 
+    P2.7                                                           00A7 
+    P3                                                             00B0 
+    P3.0                                                           00B0 
+    P3.1                                                           00B1 
+    P3.2                                                           00B2 
+    P3.3                                                           00B3 
+    P3.4                                                           00B4 
+    P3.5                                                           00B5 
+    P3.6                                                           00B6 
+    P3.7                                                           00B7 
+    PCON                                                           0087 
+    PS                                                             00BC 
+    PSW                                                            00D0 
+    PSW.0                                                          00D0 
+    PSW.1                                                          00D1 
+    PSW.2                                                          00D2 
+    PSW.3                                                          00D3 
+    PSW.4                                                          00D4 
+    PSW.5                                                          00D5 
+    PSW.6                                                          00D6 
+    PSW.7                                                          00D7 
+    PT0                                                            00B9 
+    PT1                                                            00BB 
+    PT2                                                            00BD 
+    PX0                                                            00B8 
+    PX1                                                            00BA 
+    RB8                                                            009A 
+    RCAP2H                                                         00CB 
+    RCAP2L                                                         00CA 
+    RCLK                                                           00CD 
+    REN                                                            009C 
+    RI                                                             0098 
+    RS0                                                            00D3 
+    RS1                                                            00D4 
+    RXD                                                            00B0 
+    SBUF                                                           0099 
+    SCON                                                           0098 
+    SCON.0                                                         0098 
+    SCON.1                                                         0099 
+    SCON.2                                                         009A 
+    SCON.3                                                         009B 
+    SCON.4                                                         009C 
+    SCON.5                                                         009D 
+    SCON.6                                                         009E 
+    SCON.7                                                         009F 
+    SM0                                                            009F 
+    SM1                                                            009E 
+    SM2                                                            009D 
+    SP                                                             0081 
+    T2CON                                                          00C8 
+    T2CON.0                                                        00C8 
+    T2CON.1                                                        00C9 
+    T2CON.2                                                        00CA 
+    T2CON.3                                                        00CB 
+    T2CON.4                                                        00CC 
+    T2CON.5                                                        00CD 
+    T2CON.6                                                        00CE 
+    T2CON.7                                                        00CF 
+    TB8                                                            009B 
+    TCLK                                                           00CC 
+    TCON                                                           0088 
+    TCON.0                                                         0088 
+    TCON.1                                                         0089 
+    TCON.2                                                         008A 
+    TCON.3                                                         008B 
+    TCON.4                                                         008C 
+    TCON.5                                                         008D 
+    TCON.6                                                         008E 
+    TCON.7                                                         008F 
+    TF0                                                            008D 
+    TF1                                                            008F 
+    TF2                                                            00CF 
+    TH0                                                            008C 
+    TH1                                                            008D 
+    TH2                                                            00CD 
+    TI                                                             0099 
+    TL0                                                            008A 
+    TL1                                                            008B 
+    TL2                                                            00CC 
+    TMOD                                                           0089 
+    TR0                                                            008C 
+    TR1                                                            008E 
+    TR2                                                            00CA 
+    TXD                                                            00B1 
+ 1A XFtest_radio$updateLeds$0$0                                 =  0311 GR
+ 1A XG$ISR_T3$0$0                                               =  02BF GR
+ 1A XG$main$0$0                                                 =  0385 GR
+ 1A XG$reportResults$0$0                                        =  0107 GR
+    _AC                                                         =  00D6 
+    _ACC                                                        =  00E0 
+    _ACC_0                                                      =  00E0 
+    _ACC_1                                                      =  00E1 
+    _ACC_2                                                      =  00E2 
+    _ACC_3                                                      =  00E3 
+    _ACC_4                                                      =  00E4 
+    _ACC_5                                                      =  00E5 
+    _ACC_6                                                      =  00E6 
+    _ACC_7                                                      =  00E7 
+    _ADC                                                        =  FFFFBBBA 
+    _ADCCFG                                                     =  00F2 
+    _ADCCON1                                                    =  00B4 
+    _ADCCON2                                                    =  00B5 
+    _ADCCON3                                                    =  00B6 
+    _ADCH                                                       =  00BB 
+    _ADCIE                                                      =  00A9 
+    _ADCIF                                                      =  008D 
+    _ADCL                                                       =  00BA 
+    _ADDR                                                       =  DF05 
+    _AGCCTRL0                                                   =  DF19 
+    _AGCCTRL1                                                   =  DF18 
+    _AGCCTRL2                                                   =  DF17 
+    _B                                                          =  00F0 
+    _BSCFG                                                      =  DF16 
+    _B_0                                                        =  00F0 
+    _B_1                                                        =  00F1 
+    _B_2                                                        =  00F2 
+    _B_3                                                        =  00F3 
+    _B_4                                                        =  00F4 
+    _B_5                                                        =  00F5 
+    _B_6                                                        =  00F6 
+    _B_7                                                        =  00F7 
+    _CHANNR                                                     =  DF06 
+    _CLKCON                                                     =  00C6 
+    _CY                                                         =  00D7 
+ 1B _DAC_ADDRESS                                                   0000 R
+ 1B _DAC_COMMAND                                                   0001 R
+    _DEVIATN                                                    =  DF11 
+    _DMA0CFG                                                    =  FFFFD5D4 
+    _DMA0CFGH                                                   =  00D5 
+    _DMA0CFGL                                                   =  00D4 
+    _DMA1CFG                                                    =  FFFFD3D2 
+    _DMA1CFGH                                                   =  00D3 
+    _DMA1CFGL                                                   =  00D2 
+    _DMAARM                                                     =  00D6 
+    _DMAIE                                                      =  00B8 
+    _DMAIF                                                      =  00C0 
+    _DMAIRQ                                                     =  00D1 
+    _DMAREQ                                                     =  00D7 
+    _DPH0                                                       =  0083 
+    _DPH1                                                       =  0085 
+    _DPL0                                                       =  0082 
+    _DPL1                                                       =  0084 
+    _DPS                                                        =  0092 
+    _EA                                                         =  00AF 
+    _ENCCS                                                      =  00B3 
+    _ENCDI                                                      =  00B1 
+    _ENCDO                                                      =  00B2 
+    _ENCIE                                                      =  00AC 
+    _ENCIF_0                                                    =  0098 
+    _ENCIF_1                                                    =  0099 
+    _ENDIAN                                                     =  0095 
+    _F0                                                         =  00D5 
+    _F1                                                         =  00D1 
+    _FADDR                                                      =  FFFFADAC 
+    _FADDRH                                                     =  00AD 
+    _FADDRL                                                     =  00AC 
+    _FCTL                                                       =  00AE 
+    _FOCCFG                                                     =  DF15 
+    _FREND0                                                     =  DF1B 
+    _FREND1                                                     =  DF1A 
+    _FREQ0                                                      =  DF0B 
+    _FREQ1                                                      =  DF0A 
+    _FREQ2                                                      =  DF09 
+    _FREQEST                                                    =  DF38 
+    _FSCAL0                                                     =  DF1F 
+    _FSCAL1                                                     =  DF1E 
+    _FSCAL2                                                     =  DF1D 
+    _FSCAL3                                                     =  DF1C 
+    _FSCTRL0                                                    =  DF08 
+    _FSCTRL1                                                    =  DF07 
+    _FWDATA                                                     =  00AF 
+    _FWT                                                        =  00AB 
+    _I2SCFG0                                                    =  DF40 
+    _I2SCFG1                                                    =  DF41 
+    _I2SCLKF0                                                   =  DF46 
+    _I2SCLKF1                                                   =  DF47 
+    _I2SCLKF2                                                   =  DF48 
+    _I2SDATH                                                    =  DF43 
+    _I2SDATL                                                    =  DF42 
+    _I2SSTAT                                                    =  DF45 
+    _I2SWCNT                                                    =  DF44 
+    _IEN0                                                       =  00A8 
+    _IEN1                                                       =  00B8 
+    _IEN2                                                       =  009A 
+    _IOCFG0                                                     =  DF31 
+    _IOCFG1                                                     =  DF30 
+    _IOCFG2                                                     =  DF2F 
+    _IP0                                                        =  00A9 
+    _IP1                                                        =  00B9 
+    _IRCON                                                      =  00C0 
+    _IRCON2                                                     =  00E8 
+    _ISR_RF                                                        **** GX
+ 1A _ISR_T3                                                        010A GR
+  C _ISR_T3_sloc0_1_0                                              0004 R
+    _ISR_T4                                                        **** GX
+    _LQI                                                        =  DF39 
+    _MARCSTATE                                                  =  DF3B 
+    _MCSM0                                                      =  DF14 
+    _MCSM1                                                      =  DF13 
+    _MCSM2                                                      =  DF12 
+    _MDMCFG0                                                    =  DF10 
+    _MDMCFG1                                                    =  DF0F 
+    _MDMCFG2                                                    =  DF0E 
+    _MDMCFG3                                                    =  DF0D 
+    _MDMCFG4                                                    =  DF0C 
+    _MEMCTR                                                     =  00C7 
+    _MPAGE                                                      =  0093 
+    _OV                                                         =  00D2 
+    _OVFIM                                                      =  00DE 
+    _P                                                          =  00D0 
+    _P0                                                         =  0080 
+    _P0DIR                                                      =  00FD 
+    _P0IE                                                       =  00BD 
+    _P0IF                                                       =  00C5 
+    _P0IFG                                                      =  0089 
+    _P0INP                                                      =  008F 
+    _P0SEL                                                      =  00F3 
+    _P0_0                                                       =  0080 
+    _P0_1                                                       =  0081 
+    _P0_2                                                       =  0082 
+    _P0_3                                                       =  0083 
+    _P0_4                                                       =  0084 
+    _P0_5                                                       =  0085 
+    _P0_6                                                       =  0086 
+    _P0_7                                                       =  0087 
+    _P1                                                         =  0090 
+    _P1DIR                                                      =  00FE 
+    _P1IEN                                                      =  008D 
+    _P1IF                                                       =  00EB 
+    _P1IFG                                                      =  008A 
+    _P1INP                                                      =  00F6 
+    _P1SEL                                                      =  00F4 
+    _P1_0                                                       =  0090 
+    _P1_1                                                       =  0091 
+    _P1_2                                                       =  0092 
+    _P1_3                                                       =  0093 
+    _P1_4                                                       =  0094 
+    _P1_5                                                       =  0095 
+    _P1_6                                                       =  0096 
+    _P1_7                                                       =  0097 
+    _P2                                                         =  00A0 
+    _P2DIR                                                      =  00FF 
+    _P2IF                                                       =  00E8 
+    _P2IFG                                                      =  008B 
+    _P2INP                                                      =  00F7 
+    _P2SEL                                                      =  00F5 
+    _P2_0                                                       =  00A0 
+    _P2_1                                                       =  00A1 
+    _P2_2                                                       =  00A2 
+    _P2_3                                                       =  00A3 
+    _P2_4                                                       =  00A4 
+    _P2_5                                                       =  00A5 
+    _P2_6                                                       =  00A6 
+    _P2_7                                                       =  00A7 
+    _PARTNUM                                                    =  DF36 
+    _PA_TABLE0                                                  =  DF2E 
+    _PCON                                                       =  0087 
+    _PERCFG                                                     =  00F1 
+    _PICTL                                                      =  008C 
+    _PKTCTRL0                                                   =  DF04 
+    _PKTCTRL1                                                   =  DF03 
+    _PKTLEN                                                     =  DF02 
+    _PKTSTATUS                                                  =  DF3C 
+    _PSW                                                        =  00D0 
+    _RFD                                                        =  00D9 
+    _RFIF                                                       =  00E9 
+    _RFIM                                                       =  0091 
+    _RFST                                                       =  00E1 
+    _RFTXRXIE                                                   =  00A8 
+    _RFTXRXIF                                                   =  0089 
+    _RNDH                                                       =  00BD 
+    _RNDL                                                       =  00BC 
+    _RS0                                                        =  00D3 
+    _RS1                                                        =  00D4 
+    _RSSI                                                       =  DF3A 
+    _S0CON                                                      =  0098 
+    _S1CON                                                      =  009B 
+    _SLEEP                                                      =  00BE 
+    _SP                                                         =  0081 
+    _STIE                                                       =  00AD 
+    _STIF                                                       =  00C7 
+    _SYNC0                                                      =  DF01 
+    _SYNC1                                                      =  DF00 
+    _T1CC0H                                                     =  00DB 
+    _T1CC0L                                                     =  00DA 
+    _T1CC1H                                                     =  00DD 
+    _T1CC1L                                                     =  00DC 
+    _T1CC2H                                                     =  00DF 
+    _T1CC2L                                                     =  00DE 
+    _T1CCTL0                                                    =  00E5 
+    _T1CCTL1                                                    =  00E6 
+    _T1CCTL2                                                    =  00E7 
+    _T1CNTH                                                     =  00E3 
+    _T1CNTL                                                     =  00E2 
+    _T1CTL                                                      =  00E4 
+    _T1IE                                                       =  00B9 
+    _T1IF                                                       =  00C1 
+    _T2CT                                                       =  009C 
+    _T2CTL                                                      =  009E 
+    _T2IE                                                       =  00BA 
+    _T2IF                                                       =  00C2 
+    _T2PR                                                       =  009D 
+    _T3CC0                                                      =  00CD 
+    _T3CC1                                                      =  00CF 
+    _T3CCTL0                                                    =  00CC 
+    _T3CCTL1                                                    =  00CE 
+    _T3CH0IF                                                    =  00D9 
+    _T3CH1IF                                                    =  00DA 
+    _T3CNT                                                      =  00CA 
+    _T3CTL                                                      =  00CB 
+    _T3IE                                                       =  00BB 
+    _T3IF                                                       =  00C3 
+    _T3OVFIF                                                    =  00D8 
+    _T4CC0                                                      =  00ED 
+    _T4CC1                                                      =  00EF 
+    _T4CCTL0                                                    =  00EC 
+    _T4CCTL1                                                    =  00EE 
+    _T4CH0IF                                                    =  00DC 
+    _T4CH1IF                                                    =  00DD 
+    _T4CNT                                                      =  00EA 
+    _T4CTL                                                      =  00EB 
+    _T4IE                                                       =  00BC 
+    _T4IF                                                       =  00C4 
+    _T4OVFIF                                                    =  00DB 
+    _TCON                                                       =  0088 
+    _TEST0                                                      =  DF25 
+    _TEST1                                                      =  DF24 
+    _TEST2                                                      =  DF23 
+    _TIMIF                                                      =  00D8 
+    _U0BAUD                                                     =  00C2 
+    _U0CSR                                                      =  0086 
+    _U0DBUF                                                     =  00C1 
+    _U0GCR                                                      =  00C5 
+    _U0UCR                                                      =  00C4 
+    _U1ACTIVE                                                   =  00F8 
+    _U1BAUD                                                     =  00FA 
+    _U1CSR                                                      =  00F8 
+    _U1DBUF                                                     =  00F9 
+    _U1ERR                                                      =  00FB 
+    _U1FE                                                       =  00FC 
+    _U1GCR                                                      =  00FC 
+    _U1MODE                                                     =  00FF 
+    _U1RE                                                       =  00FE 
+    _U1RX_BYTE                                                  =  00FA 
+    _U1SLAVE                                                    =  00FD 
+    _U1TX_BYTE                                                  =  00F9 
+    _U1UCR                                                      =  00FB 
+    _URX0IE                                                     =  00AA 
+    _URX0IF                                                     =  008B 
+    _URX1IE                                                     =  00AB 
+    _URX1IF                                                     =  008F 
+    _USBADDR                                                    =  DE00 
+    _USBCIE                                                     =  DE0B 
+    _USBCIF                                                     =  DE06 
+    _USBCNTH                                                    =  DE17 
+    _USBCNTL                                                    =  DE16 
+    _USBCSIH                                                    =  DE12 
+    _USBCSIL                                                    =  DE11 
+    _USBCSOH                                                    =  DE15 
+    _USBCSOL                                                    =  DE14 
+    _USBF0                                                      =  DE20 
+    _USBF1                                                      =  DE22 
+    _USBF2                                                      =  DE24 
+    _USBF3                                                      =  DE26 
+    _USBF4                                                      =  DE28 
+    _USBF5                                                      =  DE2A 
+    _USBFRMH                                                    =  DE0D 
+    _USBFRML                                                    =  DE0C 
+    _USBIIE                                                     =  DE07 
+    _USBIIF                                                     =  DE02 
+    _USBINDEX                                                   =  DE0E 
+    _USBMAXI                                                    =  DE10 
+    _USBMAXO                                                    =  DE13 
+    _USBOIE                                                     =  DE09 
+    _USBOIF                                                     =  DE04 
+    _USBPOW                                                     =  DE01 
+    _UTX0IF                                                     =  00E9 
+    _UTX1IF                                                     =  00EA 
+    _VCO_VC_DAC                                                 =  DF3D 
+    _VERSION                                                    =  DF37 
+    _WDCTL                                                      =  00C9 
+    _WDTIF                                                      =  00EC 
+    _WORCTRL                                                    =  00A2 
+    _WOREVT0                                                    =  00A3 
+    _WOREVT1                                                    =  00A4 
+    _WORIRQ                                                     =  00A1 
+    _WORTIME0                                                   =  00A5 
+    _WORTIME1                                                   =  00A6 
+    __IEN06                                                     =  00AE 
+    __IEN16                                                     =  00BE 
+    __IEN17                                                     =  00BF 
+    __IRCON25                                                   =  00ED 
+    __IRCON26                                                   =  00EE 
+    __IRCON27                                                   =  00EF 
+    __IRCON6                                                    =  00C6 
+    __SOCON2                                                    =  009A 
+    __SOCON3                                                    =  009B 
+    __SOCON4                                                    =  009C 
+    __SOCON5                                                    =  009D 
+    __SOCON6                                                    =  009E 
+    __SOCON7                                                    =  009F 
+    __TCON_0                                                    =  0088 
+    __TCON_2                                                    =  008A 
+    __TCON_4                                                    =  008C 
+    __TCON_6                                                    =  008E 
+    __TIMIF7                                                    =  00DF 
+ 11 __interrupt_vect                                               0000 R
+    __mcs51_genRAMCLEAR                                            **** GX
+    __mcs51_genXINIT                                               **** GX
+    __mcs51_genXRAMCLEAR                                           **** GX
+    __sdcc_gsinit_startup                                          **** GX
+ 11 __sdcc_program_startup                                         0086 GR
+  9 __start__stack                                                 0000 GR
+ 1B __str_0                                                        0002 R
+ 1B __str_1                                                        0016 R
+ 1B __str_2                                                        0020 R
+ 1B __str_3                                                        004D R
+ 1B __str_4                                                        005D R
+  7 _accSample                                                     0000 R
+    _boardService                                                  **** GX
+  D _cause                                                         0002 R
+    _dacInit                                                       **** GX
+  C _dacNAKd                                                       0002 R
+    _dacSendByte                                                   **** GX
+    _dacStart                                                      **** GX
+    _dacStop                                                       **** GX
+  D _dummySample                                                   0003 R
+    _getMs                                                         **** GX
+  C _initComplete                                                  0003 R
+  7 _isrCounter                                                    0003 R
+    _isrTimerInit                                                  **** GX
+  C _lostSample                                                    0001 R
+ 1A _main                                                          0312 GR
+  C _main_sloc0_1_0                                                0005 R
+  7 _operationalTimeStamp                                          0004 R
+  D _packet                                                        0000 R
+  D _packetID                                                      0005 R
+    _radioInit                                                     **** GX
+    _radioInit_PARM_1                                              **** GX
+    _radioRxCheckRxBuffer                                          **** GX
+    _radioRxCurrentPacket                                          **** GX
+    _radioRxDoneWithPacket                                         **** GX
+ 1A _reportResults                                                 0000 GR
+  E _reportResults_buffer_2_2                                      0000 R
+  7 _sampleIndex                                                   0002 R
+    _sendReceiveComplete                                           **** GX
+    _sprintf                                                       **** GX
+  C _sufficientRxBuffer                                            0000 R
+    _systemInit                                                    **** GX
+ 1A _updateLeds                                                    02C0 R
+    _usbComService                                                 **** GX
+    _usbComTxAvailable                                             **** GX
+    _usbComTxSend                                                  **** GX
+    _usbComTxSend_PARM_2                                           **** GX
+    _usbInit                                                       **** GX
+    _usbShowStatusWithGreenLed                                     **** GX
+    _vinPowerPresent                                               **** GX
+    a                                                              00E0 
+    a.0                                                            00E0 
+    a.1                                                            00E1 
+    a.2                                                            00E2 
+    a.3                                                            00E3 
+    a.4                                                            00E4 
+    a.5                                                            00E5 
+    a.6                                                            00E6 
+    a.7                                                            00E7 
+    ac                                                             00D6 
+    acc                                                            00E0 
+    acc.0                                                          00E0 
+    acc.1                                                          00E1 
+    acc.2                                                          00E2 
+    acc.3                                                          00E3 
+    acc.4                                                          00E4 
+    acc.5                                                          00E5 
+    acc.6                                                          00E6 
+    acc.7                                                          00E7 
+    ar0                                                         =  0000 
+    ar1                                                         =  0001 
+    ar2                                                         =  0002 
+    ar3                                                         =  0003 
+    ar4                                                         =  0004 
+    ar5                                                         =  0005 
+    ar6                                                         =  0006 
+    ar7                                                         =  0007 
+    b                                                              00F0 
+    b.0                                                            00F0 
+    b.1                                                            00F1 
+    b.2                                                            00F2 
+    b.3                                                            00F3 
+    b.4                                                            00F4 
+    b.5                                                            00F5 
+    b.6                                                            00F6 
+    b.7                                                            00F7 
+  6 b0                                                          =  8000 R
+  6 b1                                                          =  8100 R
+  6 b2                                                          =  8200 R
+  6 b3                                                          =  8300 R
+  6 b4                                                          =  8400 R
+  6 b5                                                          =  8500 R
+  6 b6                                                          =  8600 R
+  6 b7                                                          =  8700 R
+  6 bits                                                           0000 R
+    cprl2                                                          00C8 
+    ct2                                                            00C9 
+    cy                                                             00D7 
+    dph                                                            0083 
+    dpl                                                            0082 
+    ea                                                             00AF 
+    es                                                             00AC 
+    et0                                                            00A9 
+    et1                                                            00AB 
+    et2                                                            00AD 
+    ex0                                                            00A8 
+    ex1                                                            00AA 
+    exen2                                                          00CB 
+    exf2                                                           00CE 
+    f0                                                             00D5 
+    ie                                                             00A8 
+    ie.0                                                           00A8 
+    ie.1                                                           00A9 
+    ie.2                                                           00AA 
+    ie.3                                                           00AB 
+    ie.4                                                           00AC 
+    ie.5                                                           00AD 
+    ie.7                                                           00AF 
+    ie0                                                            0089 
+    ie1                                                            008B 
+    int0                                                           00B2 
+    int1                                                           00B3 
+    ip                                                             00B8 
+    ip.0                                                           00B8 
+    ip.1                                                           00B9 
+    ip.2                                                           00BA 
+    ip.3                                                           00BB 
+    ip.4                                                           00BC 
+    ip.5                                                           00BD 
+    it0                                                            0088 
+    it1                                                            008A 
+    ov                                                             00D2 
+    p                                                              00D0 
+    p0                                                             0080 
+    p0.0                                                           0080 
+    p0.1                                                           0081 
+    p0.2                                                           0082 
+    p0.3                                                           0083 
+    p0.4                                                           0084 
+    p0.5                                                           0085 
+    p0.6                                                           0086 
+    p0.7                                                           0087 
+    p1                                                             0090 
+    p1.0                                                           0090 
+    p1.1                                                           0091 
+    p1.2                                                           0092 
+    p1.3                                                           0093 
+    p1.4                                                           0094 
+    p1.5                                                           0095 
+    p1.6                                                           0096 
+    p1.7                                                           0097 
+    p2                                                             00A0 
+    p2.0                                                           00A0 
+    p2.1                                                           00A1 
+    p2.2                                                           00A2 
+    p2.3                                                           00A3 
+    p2.4                                                           00A4 
+    p2.5                                                           00A5 
+    p2.6                                                           00A6 
+    p2.7                                                           00A7 
+    p3                                                             00B0 
+    p3.0                                                           00B0 
+    p3.1                                                           00B1 
+    p3.2                                                           00B2 
+    p3.3                                                           00B3 
+    p3.4                                                           00B4 
+    p3.5                                                           00B5 
+    p3.6                                                           00B6 
+    p3.7                                                           00B7 
+    pcon                                                           0087 
+    ps                                                             00BC 
+    psw                                                            00D0 
+    psw.0                                                          00D0 
+    psw.1                                                          00D1 
+    psw.2                                                          00D2 
+    psw.3                                                          00D3 
+    psw.4                                                          00D4 
+    psw.5                                                          00D5 
+    psw.6                                                          00D6 
+    psw.7                                                          00D7 
+    pt0                                                            00B9 
+    pt1                                                            00BB 
+    pt2                                                            00BD 
+    px0                                                            00B8 
+    px1                                                            00BA 
+    rb8                                                            009A 
+    rcap2h                                                         00CB 
+    rcap2l                                                         00CA 
+    rclk                                                           00CD 
+    ren                                                            009C 
+    ri                                                             0098 
+    rs0                                                            00D3 
+    rs1                                                            00D4 
+    rxd                                                            00B0 
+    sbuf                                                           0099 
+    scon                                                           0098 
+    scon.0                                                         0098 
+    scon.1                                                         0099 
+    scon.2                                                         009A 
+    scon.3                                                         009B 
+    scon.4                                                         009C 
+    scon.5                                                         009D 
+    scon.6                                                         009E 
+    scon.7                                                         009F 
+    sm0                                                            009F 
+    sm1                                                            009E 
+    sm2                                                            009D 
+    sp                                                             0081 
+    t2con                                                          00C8 
+    t2con.0                                                        00C8 
+    t2con.1                                                        00C9 
+    t2con.2                                                        00CA 
+    t2con.3                                                        00CB 
+    t2con.4                                                        00CC 
+    t2con.5                                                        00CD 
+    t2con.6                                                        00CE 
+    t2con.7                                                        00CF 
+    tb8                                                            009B 
+    tclk                                                           00CC 
+    tcon                                                           0088 
+    tcon.0                                                         0088 
+    tcon.1                                                         0089 
+    tcon.2                                                         008A 
+    tcon.3                                                         008B 
+    tcon.4                                                         008C 
+    tcon.5                                                         008D 
+    tcon.6                                                         008E 
+    tcon.7                                                         008F 
+    tf0                                                            008D 
+    tf1                                                            008F 
+    tf2                                                            00CF 
+    th0                                                            008C 
+    th1                                                            008D 
+    th2                                                            00CD 
+    ti                                                             0099 
+    tl0                                                            008A 
+    tl1                                                            008B 
+    tl2                                                            00CC 
+    tmod                                                           0089 
+    tr0                                                            008C 
+    tr1                                                            008E 
+    tr2                                                            00CA 
+    txd                                                            00B1 
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods + Flat24  (Intel 8051), page 2.
+
+Area Table
+
+   0 _CODE                                      size    0   flags 0
+   1 RSEG                                       size    0   flags 8
+   2 RSEG0                                      size    0   flags 8
+   3 RSEG1                                      size    0   flags 8
+   4 REG_BANK_0                                 size    8   flags 4
+   5 REG_BANK_3                                 size    8   flags 4
+   6 BIT_BANK                                   size    1   flags 4
+   7 DSEG                                       size    8   flags 0
+   8 OSEG                                       size    0   flags 4
+   9 SSEG                                       size    1   flags 0
+   A ISEG                                       size    0   flags 0
+   B IABS                                       size    0   flags 8
+   C BSEG                                       size    6   flags 80
+   D PSEG                                       size    6   flags 50
+   E XSEG                                       size   40   flags 40
+   F XABS                                       size    0   flags 48
+  10 XISEG                                      size    0   flags 40
+  11 HOME                                       size   8B   flags 20
+  12 GSINIT0                                    size    0   flags 20
+  13 GSINIT1                                    size    0   flags 20
+  14 GSINIT2                                    size    0   flags 20
+  15 GSINIT3                                    size    0   flags 20
+  16 GSINIT4                                    size    0   flags 20
+  17 GSINIT5                                    size    0   flags 20
+  18 GSINIT                                     size    E   flags 20
+  19 GSFINAL                                    size    3   flags 20
+  1A CSEG                                       size  387   flags 20
+  1B CONST                                      size   6B   flags 20
+  1C XINIT                                      size    0   flags 20
+  1D CABS                                       size    0   flags 28

@@ -1,0 +1,461 @@
+;!FILE libraries/src/vibes_lab_dac_protocol/vibes_lab_dac_protocol.asm
+XH
+H 1B areas 185 global symbols
+M vibes_lab_dac_protocol
+O -mmcs51 --model-medium
+S Fvibes_lab_dac_protocol$AGCCTRL0$0$0 DefDF19
+S Fvibes_lab_dac_protocol$ADCH$0$0 Def00BB
+S Fvibes_lab_dac_protocol$AGCCTRL1$0$0 DefDF18
+S Fvibes_lab_dac_protocol$FWT$0$0 Def00AB
+S Fvibes_lab_dac_protocol$AGCCTRL2$0$0 DefDF17
+S Fvibes_lab_dac_protocol$DMA0CFG$0$0 DefFFFFD5D4
+S Fvibes_lab_dac_protocol$T1CNTH$0$0 Def00E3
+S Fvibes_lab_dac_protocol$DMA1CFG$0$0 DefFFFFD3D2
+S Fvibes_lab_dac_protocol$ENCIF_0$0$0 Def0098
+S Fvibes_lab_dac_protocol$ADCL$0$0 Def00BA
+S Fvibes_lab_dac_protocol$RS0$0$0 Def00D3
+S Fvibes_lab_dac_protocol$ENCIF_1$0$0 Def0099
+S Fvibes_lab_dac_protocol$F0$0$0 Def00D5
+S Fvibes_lab_dac_protocol$RS1$0$0 Def00D4
+S Fvibes_lab_dac_protocol$T1CNTL$0$0 Def00E2
+S Fvibes_lab_dac_protocol$P0IFG$0$0 Def0089
+S Fvibes_lab_dac_protocol$F1$0$0 Def00D1
+S Fvibes_lab_dac_protocol$WOREVT0$0$0 Def00A3
+S Fvibes_lab_dac_protocol$P1IFG$0$0 Def008A
+S Fvibes_lab_dac_protocol$ADCCFG$0$0 Def00F2
+S Fvibes_lab_dac_protocol$WOREVT1$0$0 Def00A4
+S Fvibes_lab_dac_protocol$P2IFG$0$0 Def008B
+S Fvibes_lab_dac_protocol$TIMIF$0$0 Def00D8
+S Fvibes_lab_dac_protocol$SLEEP$0$0 Def00BE
+S Fvibes_lab_dac_protocol$ADCCON1$0$0 Def00B4
+S Fvibes_lab_dac_protocol$PSW$0$0 Def00D0
+S Fvibes_lab_dac_protocol$ADCCON2$0$0 Def00B5
+S Fvibes_lab_dac_protocol$ADDR$0$0 DefDF05
+S Fvibes_lab_dac_protocol$IRCON$0$0 Def00C0
+S Fvibes_lab_dac_protocol$ADCCON3$0$0 Def00B6
+S Fvibes_lab_dac_protocol$CY$0$0 Def00D7
+S Fvibes_lab_dac_protocol$PICTL$0$0 Def008C
+S Fvibes_lab_dac_protocol$URX0IE$0$0 Def00AA
+S Fvibes_lab_dac_protocol$T3CC0$0$0 Def00CD
+S Fvibes_lab_dac_protocol$P1IEN$0$0 Def008D
+S Fvibes_lab_dac_protocol$I2SCLKF0$0$0 DefDF46
+S Fvibes_lab_dac_protocol$MDMCFG0$0$0 DefDF10
+S Fvibes_lab_dac_protocol$FREQ0$0$0 DefDF0B
+S Fvibes_lab_dac_protocol$WDTIF$0$0 Def00EC
+S Fvibes_lab_dac_protocol$URX1IE$0$0 Def00AB
+S Fvibes_lab_dac_protocol$URX0IF$0$0 Def008B
+S Fvibes_lab_dac_protocol$T4CC0$0$0 Def00ED
+S Fvibes_lab_dac_protocol$T3CC1$0$0 Def00CF
+S Fvibes_lab_dac_protocol$WDCTL$0$0 Def00C9
+S Fvibes_lab_dac_protocol$I2SCLKF1$0$0 DefDF47
+S Fvibes_lab_dac_protocol$MDMCFG1$0$0 DefDF0F
+S Fvibes_lab_dac_protocol$FREQ1$0$0 DefDF0A
+S Fvibes_lab_dac_protocol$URX1IF$0$0 Def008F
+S Fvibes_lab_dac_protocol$P0DIR$0$0 Def00FD
+S Fvibes_lab_dac_protocol$T4CC1$0$0 Def00EF
+S Fvibes_lab_dac_protocol$USBF0$0$0 DefDE20
+S Fvibes_lab_dac_protocol$USBPOW$0$0 DefDE01
+S Fvibes_lab_dac_protocol$I2SCLKF2$0$0 DefDF48
+S Fvibes_lab_dac_protocol$MCSM0$0$0 DefDF14
+S Fvibes_lab_dac_protocol$MDMCFG2$0$0 DefDF0E
+S Fvibes_lab_dac_protocol$FREQ2$0$0 DefDF09
+S Fvibes_lab_dac_protocol$UTX0IF$0$0 Def00E9
+S Fvibes_lab_dac_protocol$P1DIR$0$0 Def00FE
+S Fvibes_lab_dac_protocol$P0$0$0 Def0080
+S Fvibes_lab_dac_protocol$USBF1$0$0 DefDE22
+S Fvibes_lab_dac_protocol$MCSM1$0$0 DefDF13
+S Fvibes_lab_dac_protocol$MDMCFG3$0$0 DefDF0D
+S Fvibes_lab_dac_protocol$_IRCON25$0$0 Def00ED
+S Fvibes_lab_dac_protocol$UTX1IF$0$0 Def00EA
+S Fvibes_lab_dac_protocol$OVFIM$0$0 Def00DE
+S Fvibes_lab_dac_protocol$P2DIR$0$0 Def00FF
+S Fvibes_lab_dac_protocol$U0GCR$0$0 Def00C5
+S Fvibes_lab_dac_protocol$P1$0$0 Def0090
+S Fvibes_lab_dac_protocol$USBF2$0$0 DefDE24
+S Fvibes_lab_dac_protocol$USBINDEX$0$0 DefDE0E
+S Fvibes_lab_dac_protocol$MCSM2$0$0 DefDF12
+S Fvibes_lab_dac_protocol$MDMCFG4$0$0 DefDF0C
+S Fvibes_lab_dac_protocol$U1ACTIVE$0$0 Def00F8
+S Fvibes_lab_dac_protocol$_IRCON26$0$0 Def00EE
+S Fvibes_lab_dac_protocol$_TCON_0$0$0 Def0088
+S Fvibes_lab_dac_protocol$U1GCR$0$0 Def00FC
+S Fvibes_lab_dac_protocol$B$0$0 Def00F0
+S Fvibes_lab_dac_protocol$P2$0$0 Def00A0
+S Fvibes_lab_dac_protocol$USBF3$0$0 DefDE26
+S Fvibes_lab_dac_protocol$U1RX_BYTE$0$0 Def00FA
+S Fvibes_lab_dac_protocol$_IRCON27$0$0 Def00EF
+S Fvibes_lab_dac_protocol$S0CON$0$0 Def0098
+S Fvibes_lab_dac_protocol$SP$0$0 Def0081
+S Fvibes_lab_dac_protocol$USBF4$0$0 DefDE28
+S Fvibes_lab_dac_protocol$_TCON_2$0$0 Def008A
+S Fvibes_lab_dac_protocol$P0SEL$0$0 Def00F3
+S Fvibes_lab_dac_protocol$WORIRQ$0$0 Def00A1
+S Fvibes_lab_dac_protocol$S1CON$0$0 Def009B
+S Fvibes_lab_dac_protocol$USBF5$0$0 DefDE2A
+S Fvibes_lab_dac_protocol$USBADDR$0$0 DefDE00
+S Fvibes_lab_dac_protocol$U1TX_BYTE$0$0 Def00F9
+S Fvibes_lab_dac_protocol$OV$0$0 Def00D2
+S Fvibes_lab_dac_protocol$P1SEL$0$0 Def00F4
+S Fvibes_lab_dac_protocol$_TCON_4$0$0 Def008C
+S Fvibes_lab_dac_protocol$P2SEL$0$0 Def00F5
+S Fvibes_lab_dac_protocol$RFIF$0$0 Def00E9
+S Fvibes_lab_dac_protocol$ACC$0$0 Def00E0
+S Fvibes_lab_dac_protocol$P0INP$0$0 Def008F
+S Fvibes_lab_dac_protocol$PA_TABLE0$0$0 DefDF2E
+S Fvibes_lab_dac_protocol$FOCCFG$0$0 DefDF15
+S Fvibes_lab_dac_protocol$_TCON_6$0$0 Def008E
+S Fvibes_lab_dac_protocol$ADC$0$0 DefFFFFBBBA
+S Fvibes_lab_dac_protocol$P1INP$0$0 Def00F6
+S Fvibes_lab_dac_protocol$T1CTL$0$0 Def00E4
+S Fvibes_lab_dac_protocol$P2INP$0$0 Def00F7
+S Fvibes_lab_dac_protocol$FCTL$0$0 Def00AE
+S Fvibes_lab_dac_protocol$FADDRH$0$0 Def00AD
+S Fvibes_lab_dac_protocol$T2CTL$0$0 Def009E
+S Fvibes_lab_dac_protocol$T3CTL$0$0 Def00CB
+S Fvibes_lab_dac_protocol$DEVIATN$0$0 DefDF11
+S Fvibes_lab_dac_protocol$T4CTL$0$0 Def00EB
+S Fvibes_lab_dac_protocol$T3CNT$0$0 Def00CA
+S Fvibes_lab_dac_protocol$RNDH$0$0 Def00BD
+S Fvibes_lab_dac_protocol$IEN0$0$0 Def00A8
+S Fvibes_lab_dac_protocol$DPH0$0$0 Def0083
+S Fvibes_lab_dac_protocol$SYNC0$0$0 DefDF01
+S Fvibes_lab_dac_protocol$T4CNT$0$0 Def00EA
+S Fvibes_lab_dac_protocol$IEN1$0$0 Def00B8
+S Fvibes_lab_dac_protocol$FADDRL$0$0 Def00AC
+S Fvibes_lab_dac_protocol$U0CSR$0$0 Def0086
+S Fvibes_lab_dac_protocol$DPH1$0$0 Def0085
+S Fvibes_lab_dac_protocol$I2SCFG0$0$0 DefDF40
+S Fvibes_lab_dac_protocol$SYNC1$0$0 DefDF00
+S Fvibes_lab_dac_protocol$P0IE$0$0 Def00BD
+S Fvibes_lab_dac_protocol$U1CSR$0$0 Def00F8
+S Fvibes_lab_dac_protocol$IEN2$0$0 Def009A
+S Fvibes_lab_dac_protocol$RFIM$0$0 Def0091
+S Fvibes_lab_dac_protocol$I2SDATH$0$0 DefDF43
+S Fvibes_lab_dac_protocol$I2SCFG1$0$0 DefDF41
+S Fvibes_lab_dac_protocol$U1ERR$0$0 Def00FB
+S Fvibes_lab_dac_protocol$_TIMIF7$0$0 Def00DF
+S Fvibes_lab_dac_protocol$P0IF$0$0 Def00C5
+S Fvibes_lab_dac_protocol$P0_0$0$0 Def0080
+S Fvibes_lab_dac_protocol$U0UCR$0$0 Def00C4
+S Fvibes_lab_dac_protocol$ENDIAN$0$0 Def0095
+S Fvibes_lab_dac_protocol$TEST0$0$0 DefDF25
+S Fvibes_lab_dac_protocol$P1IF$0$0 Def00EB
+S Fvibes_lab_dac_protocol$P$0$0 Def00D0
+S Fvibes_lab_dac_protocol$_IRCON6$0$0 Def00C6
+S Fvibes_lab_dac_protocol$P1_0$0$0 Def0090
+S Fvibes_lab_dac_protocol$P0_1$0$0 Def0081
+S Fvibes_lab_dac_protocol$U1UCR$0$0 Def00FB
+S Fvibes_lab_dac_protocol$RNDL$0$0 Def00BC
+S Fvibes_lab_dac_protocol$PCON$0$0 Def0087
+S Fvibes_lab_dac_protocol$DPL0$0$0 Def0082
+S Fvibes_lab_dac_protocol$USBCSIH$0$0 DefDE12
+S Fvibes_lab_dac_protocol$TEST1$0$0 DefDF24
+S Fvibes_lab_dac_protocol$U1FE$0$0 Def00FC
+S Fvibes_lab_dac_protocol$B_0$0$0 Def00F0
+S Fvibes_lab_dac_protocol$P2IF$0$0 Def00E8
+S Fvibes_lab_dac_protocol$T3CH0IF$0$0 Def00D9
+S Fvibes_lab_dac_protocol$P2_0$0$0 Def00A0
+S Fvibes_lab_dac_protocol$P1_1$0$0 Def0091
+S Fvibes_lab_dac_protocol$P0_2$0$0 Def0082
+S Fvibes_lab_dac_protocol$DPL1$0$0 Def0084
+S Fvibes_lab_dac_protocol$TEST2$0$0 DefDF23
+S Fvibes_lab_dac_protocol$B_1$0$0 Def00F1
+S Fvibes_lab_dac_protocol$T4CH0IF$0$0 Def00DC
+S Fvibes_lab_dac_protocol$T3CH1IF$0$0 Def00DA
+S Fvibes_lab_dac_protocol$P2_1$0$0 Def00A1
+S Fvibes_lab_dac_protocol$P1_2$0$0 Def0092
+S Fvibes_lab_dac_protocol$P0_3$0$0 Def0083
+S Fvibes_lab_dac_protocol$DMAARM$0$0 Def00D6
+S Fvibes_lab_dac_protocol$I2SDATL$0$0 DefDF42
+S Fvibes_lab_dac_protocol$PKTSTATUS$0$0 DefDF3C
+S Fvibes_lab_dac_protocol$B_2$0$0 Def00F2
+S Fvibes_lab_dac_protocol$T4CH1IF$0$0 Def00DD
+S Fvibes_lab_dac_protocol$T1IE$0$0 Def00B9
+S Fvibes_lab_dac_protocol$P2_2$0$0 Def00A2
+S Fvibes_lab_dac_protocol$_SOCON2$0$0 Def009A
+S Fvibes_lab_dac_protocol$P1_3$0$0 Def0093
+S Fvibes_lab_dac_protocol$P0_4$0$0 Def0084
+S Fvibes_lab_dac_protocol$PKTCTRL0$0$0 DefDF04
+S Fvibes_lab_dac_protocol$B_3$0$0 Def00F3
+S Fvibes_lab_dac_protocol$T1IF$0$0 Def00C1
+S Fvibes_lab_dac_protocol$T2IE$0$0 Def00BA
+S Fvibes_lab_dac_protocol$P2_3$0$0 Def00A3
+S Fvibes_lab_dac_protocol$_SOCON3$0$0 Def009B
+S Fvibes_lab_dac_protocol$P1_4$0$0 Def0094
+S Fvibes_lab_dac_protocol$P0_5$0$0 Def0085
+S Fvibes_lab_dac_protocol$TCON$0$0 Def0088
+S Fvibes_lab_dac_protocol$USBCSIL$0$0 DefDE11
+S Fvibes_lab_dac_protocol$PKTCTRL1$0$0 DefDF03
+S Fvibes_lab_dac_protocol$B_4$0$0 Def00F4
+S Fvibes_lab_dac_protocol$T2IF$0$0 Def00C2
+S Fvibes_lab_dac_protocol$T3IE$0$0 Def00BB
+S Fvibes_lab_dac_protocol$STIE$0$0 Def00AD
+S Fvibes_lab_dac_protocol$P2_4$0$0 Def00A4
+S Fvibes_lab_dac_protocol$_SOCON4$0$0 Def009C
+S Fvibes_lab_dac_protocol$P1_5$0$0 Def0095
+S Fvibes_lab_dac_protocol$P0_6$0$0 Def0086
+S Fvibes_lab_dac_protocol$B_5$0$0 Def00F5
+S Fvibes_lab_dac_protocol$ACC_0$0$0 Def00E0
+S Fvibes_lab_dac_protocol$STIF$0$0 Def00C7
+S Fvibes_lab_dac_protocol$T3IF$0$0 Def00C3
+S Fvibes_lab_dac_protocol$T4IE$0$0 Def00BC
+S Fvibes_lab_dac_protocol$ADCIE$0$0 Def00A9
+S Fvibes_lab_dac_protocol$P2_5$0$0 Def00A5
+S Fvibes_lab_dac_protocol$_SOCON5$0$0 Def009D
+S Fvibes_lab_dac_protocol$P1_6$0$0 Def0096
+S Fvibes_lab_dac_protocol$P0_7$0$0 Def0087
+S Fvibes_lab_dac_protocol$USBCNTH$0$0 DefDE17
+S Fvibes_lab_dac_protocol$USBCSOH$0$0 DefDE15
+S Fvibes_lab_dac_protocol$USBFRMH$0$0 DefDE0D
+S Fvibes_lab_dac_protocol$B_6$0$0 Def00F6
+S Fvibes_lab_dac_protocol$ACC_1$0$0 Def00E1
+S Fvibes_lab_dac_protocol$T4IF$0$0 Def00C4
+S Fvibes_lab_dac_protocol$P2_6$0$0 Def00A6
+S Fvibes_lab_dac_protocol$_SOCON6$0$0 Def009E
+S Fvibes_lab_dac_protocol$P1_7$0$0 Def0097
+S Fvibes_lab_dac_protocol$ADCIF$0$0 Def008D
+S Fvibes_lab_dac_protocol$PERCFG$0$0 Def00F1
+S Fvibes_lab_dac_protocol$FWDATA$0$0 Def00AF
+S Fvibes_lab_dac_protocol$WORTIME0$0$0 Def00A5
+S Fvibes_lab_dac_protocol$IOCFG0$0$0 DefDF31
+S Fvibes_lab_dac_protocol$B_7$0$0 Def00F7
+S Fvibes_lab_dac_protocol$ACC_2$0$0 Def00E2
+S Fvibes_lab_dac_protocol$P2_7$0$0 Def00A7
+S Fvibes_lab_dac_protocol$_SOCON7$0$0 Def009F
+S Fvibes_lab_dac_protocol$WORTIME1$0$0 Def00A6
+S Fvibes_lab_dac_protocol$USBMAXI$0$0 DefDE10
+S Fvibes_lab_dac_protocol$IOCFG1$0$0 DefDF30
+S Fvibes_lab_dac_protocol$FSCAL0$0$0 DefDF1F
+S Fvibes_lab_dac_protocol$ACC_3$0$0 Def00E3
+S Fvibes_lab_dac_protocol$FREQEST$0$0 DefDF38
+S Fvibes_lab_dac_protocol$IOCFG2$0$0 DefDF2F
+S Fvibes_lab_dac_protocol$FSCAL1$0$0 DefDF1E
+S Fvibes_lab_dac_protocol$CHANNR$0$0 DefDF06
+S Fvibes_lab_dac_protocol$ACC_4$0$0 Def00E4
+S Fvibes_lab_dac_protocol$DMAREQ$0$0 Def00D7
+S Fvibes_lab_dac_protocol$DMA0CFGH$0$0 Def00D5
+S Fvibes_lab_dac_protocol$CLKCON$0$0 Def00C6
+S Fvibes_lab_dac_protocol$USBCNTL$0$0 DefDE16
+S Fvibes_lab_dac_protocol$USBCSOL$0$0 DefDE14
+S Fvibes_lab_dac_protocol$USBFRML$0$0 DefDE0C
+S Fvibes_lab_dac_protocol$USBCIE$0$0 DefDE0B
+S Fvibes_lab_dac_protocol$FSCAL2$0$0 DefDF1D
+S Fvibes_lab_dac_protocol$ACC_5$0$0 Def00E5
+S Fvibes_lab_dac_protocol$T1CCTL0$0$0 Def00E5
+S Fvibes_lab_dac_protocol$DMA1CFGH$0$0 Def00D3
+S Fvibes_lab_dac_protocol$USBCIF$0$0 DefDE06
+S Fvibes_lab_dac_protocol$FSCAL3$0$0 DefDF1C
+S Fvibes_lab_dac_protocol$ACC_6$0$0 Def00E6
+S Fvibes_lab_dac_protocol$RFTXRXIE$0$0 Def00A8
+S Fvibes_lab_dac_protocol$T1CCTL1$0$0 Def00E6
+S Fvibes_lab_dac_protocol$RFD$0$0 Def00D9
+S Fvibes_lab_dac_protocol$U1RE$0$0 Def00FE
+S Fvibes_lab_dac_protocol$ACC_7$0$0 Def00E7
+S Fvibes_lab_dac_protocol$RFTXRXIF$0$0 Def0089
+S Fvibes_lab_dac_protocol$T1CCTL2$0$0 Def00E7
+S Fvibes_lab_dac_protocol$T3CCTL0$0$0 Def00CC
+S Fvibes_lab_dac_protocol$T2CT$0$0 Def009C
+S Fvibes_lab_dac_protocol$FSCTRL0$0$0 DefDF08
+S Fvibes_lab_dac_protocol$T4CCTL0$0$0 Def00EC
+S Fvibes_lab_dac_protocol$DMA0CFGL$0$0 Def00D4
+S Fvibes_lab_dac_protocol$DMAIRQ$0$0 Def00D1
+S Fvibes_lab_dac_protocol$T3CCTL1$0$0 Def00CE
+S Fvibes_lab_dac_protocol$USBMAXO$0$0 DefDE13
+S Fvibes_lab_dac_protocol$FREND0$0$0 DefDF1B
+S Fvibes_lab_dac_protocol$FSCTRL1$0$0 DefDF07
+S Fvibes_lab_dac_protocol$T4CCTL1$0$0 Def00EE
+S Fvibes_lab_dac_protocol$RFST$0$0 Def00E1
+S Fvibes_lab_dac_protocol$DMA1CFGL$0$0 Def00D2
+S Fvibes_lab_dac_protocol$FREND1$0$0 DefDF1A
+S Fvibes_lab_dac_protocol$DMAIE$0$0 Def00B8
+S Fvibes_lab_dac_protocol$USBIIE$0$0 DefDE07
+S Fvibes_lab_dac_protocol$RSSI$0$0 DefDF3A
+S Fvibes_lab_dac_protocol$U1SLAVE$0$0 Def00FD
+S Fvibes_lab_dac_protocol$T3OVFIF$0$0 Def00D8
+S Fvibes_lab_dac_protocol$DMAIF$0$0 Def00C0
+S Fvibes_lab_dac_protocol$_IEN06$0$0 Def00AE
+S Fvibes_lab_dac_protocol$FADDR$0$0 DefFFFFADAC
+S Fvibes_lab_dac_protocol$U0BAUD$0$0 Def00C2
+S Fvibes_lab_dac_protocol$USBIIF$0$0 DefDE02
+S Fvibes_lab_dac_protocol$T4OVFIF$0$0 Def00DB
+S Fvibes_lab_dac_protocol$_IEN16$0$0 Def00BE
+S Fvibes_lab_dac_protocol$U1BAUD$0$0 Def00FA
+S Fvibes_lab_dac_protocol$_IEN17$0$0 Def00BF
+S Fvibes_lab_dac_protocol$T1CC0H$0$0 Def00DB
+S Fvibes_lab_dac_protocol$ENCDI$0$0 Def00B1
+S Fvibes_lab_dac_protocol$MARCSTATE$0$0 DefDF3B
+S Fvibes_lab_dac_protocol$AC$0$0 Def00D6
+S Fvibes_lab_dac_protocol$ENCIE$0$0 Def00AC
+S Fvibes_lab_dac_protocol$T1CC1H$0$0 Def00DD
+S Fvibes_lab_dac_protocol$BSCFG$0$0 DefDF16
+S Fvibes_lab_dac_protocol$T1CC2H$0$0 Def00DF
+S Fvibes_lab_dac_protocol$LQI$0$0 DefDF39
+S Fvibes_lab_dac_protocol$VERSION$0$0 DefDF37
+S Fvibes_lab_dac_protocol$EA$0$0 Def00AF
+S Fvibes_lab_dac_protocol$U0DBUF$0$0 Def00C1
+S Fvibes_lab_dac_protocol$USBOIE$0$0 DefDE09
+S Fvibes_lab_dac_protocol$VCO_VC_DAC$0$0 DefDF3D
+S Fvibes_lab_dac_protocol$PARTNUM$0$0 DefDF36
+S Fvibes_lab_dac_protocol$U1DBUF$0$0 Def00F9
+S Fvibes_lab_dac_protocol$T1CC0L$0$0 Def00DA
+S Fvibes_lab_dac_protocol$DPS$0$0 Def0092
+S Fvibes_lab_dac_protocol$USBOIF$0$0 DefDE04
+S Fvibes_lab_dac_protocol$T1CC1L$0$0 Def00DC
+S Fvibes_lab_dac_protocol$MEMCTR$0$0 Def00C7
+S Fvibes_lab_dac_protocol$T2PR$0$0 Def009D
+S Fvibes_lab_dac_protocol$T1CC2L$0$0 Def00DE
+S Fvibes_lab_dac_protocol$ENCDO$0$0 Def00B2
+S Fvibes_lab_dac_protocol$IP0$0$0 Def00A9
+S Fvibes_lab_dac_protocol$I2SSTAT$0$0 DefDF45
+S Fvibes_lab_dac_protocol$I2SWCNT$0$0 DefDF44
+S Fvibes_lab_dac_protocol$IP1$0$0 Def00B9
+S Fvibes_lab_dac_protocol$MPAGE$0$0 Def0093
+S Fvibes_lab_dac_protocol$U1MODE$0$0 Def00FF
+S Fvibes_lab_dac_protocol$ENCCS$0$0 Def00B3
+S Fvibes_lab_dac_protocol$IRCON2$0$0 Def00E8
+S Fvibes_lab_dac_protocol$WORCTRL$0$0 Def00A2
+S .__.ABS. Def0000
+S Fvibes_lab_dac_protocol$PKTLEN$0$0 DefDF02
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A OSEG size 0 flags 4 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 3F flags 20 addr 0
+S XG$dacStart$0$0 Def0013
+S A$vibes_lab_dac_protocol$820 Def0023
+S A$vibes_lab_dac_protocol$821 Def0024
+S A$vibes_lab_dac_protocol$812 Def001B
+S A$vibes_lab_dac_protocol$840 Def0030
+S A$vibes_lab_dac_protocol$832 Def002B
+S A$vibes_lab_dac_protocol$814 Def001D
+S A$vibes_lab_dac_protocol$751 Def000A
+S A$vibes_lab_dac_protocol$742 Def0003
+S A$vibes_lab_dac_protocol$860 Def003E
+S A$vibes_lab_dac_protocol$824 Def0026
+S A$vibes_lab_dac_protocol$852 Def0039
+S A$vibes_lab_dac_protocol$843 Def0033
+S A$vibes_lab_dac_protocol$816 Def0020
+S A$vibes_lab_dac_protocol$771 Def000F
+S XG$dacInit$0$0 Def000E
+S C$vibes_lab_dac_protocol.c$22$0$0 Def0000
+S A$vibes_lab_dac_protocol$835 Def002D
+S A$vibes_lab_dac_protocol$754 Def000C
+S A$vibes_lab_dac_protocol$745 Def0006
+S A$vibes_lab_dac_protocol$836 Def002E
+S A$vibes_lab_dac_protocol$827 Def0028
+S A$vibes_lab_dac_protocol$809 Def0019
+S A$vibes_lab_dac_protocol$791 Def0014
+S G$dacStart$0$0 Def000F
+S A$vibes_lab_dac_protocol$855 Def003C
+S A$vibes_lab_dac_protocol$846 Def0035
+S A$vibes_lab_dac_protocol$828 Def0029
+S A$vibes_lab_dac_protocol$819 Def0022
+S A$vibes_lab_dac_protocol$774 Def0011
+S C$vibes_lab_dac_protocol.c$32$1$1 Def000A
+S A$vibes_lab_dac_protocol$829 Def002A
+S A$vibes_lab_dac_protocol$757 Def000E
+S A$vibes_lab_dac_protocol$748 Def0008
+S A$vibes_lab_dac_protocol$739 Def0000
+S C$vibes_lab_dac_protocol.c$60$1$1 Def0018
+S C$vibes_lab_dac_protocol.c$33$1$1 Def000C
+S C$vibes_lab_dac_protocol.c$24$1$1 Def0000
+S A$vibes_lab_dac_protocol$794 Def0016
+S C$vibes_lab_dac_protocol.c$52$1$1 Def0014
+S C$vibes_lab_dac_protocol.c$43$1$1 Def000F
+S C$vibes_lab_dac_protocol.c$25$1$1 Def0003
+S A$vibes_lab_dac_protocol$849 Def0037
+S A$vibes_lab_dac_protocol$777 Def0013
+S C$vibes_lab_dac_protocol.c$62$1$1 Def0019
+S _dacStop Def0014
+S C$vibes_lab_dac_protocol.c$36$1$1 Def000E
+S A$vibes_lab_dac_protocol$797 Def0018
+S C$vibes_lab_dac_protocol.c$71$2$2 Def0022
+S C$vibes_lab_dac_protocol.c$28$1$1 Def0006
+S G$dacInit$0$0 Def0000
+S C$vibes_lab_dac_protocol.c$92$1$1 Def0039
+S C$vibes_lab_dac_protocol.c$56$1$1 Def0014
+S C$vibes_lab_dac_protocol.c$47$1$1 Def000F
+S C$vibes_lab_dac_protocol.c$29$1$1 Def0008
+S C$vibes_lab_dac_protocol.c$93$1$1 Def003C
+S C$vibes_lab_dac_protocol.c$84$1$1 Def0030
+S C$vibes_lab_dac_protocol.c$73$2$2 Def0026
+S C$vibes_lab_dac_protocol.c$57$1$1 Def0016
+S C$vibes_lab_dac_protocol.c$48$1$1 Def0011
+S C$vibes_lab_dac_protocol.c$49$1$1 Def0013
+S C$vibes_lab_dac_protocol.c$95$1$1 Def003E
+S C$vibes_lab_dac_protocol.c$86$1$1 Def0033
+S C$vibes_lab_dac_protocol.c$75$2$2 Def0028
+S C$vibes_lab_dac_protocol.c$96$1$1 Def003E
+S C$vibes_lab_dac_protocol.c$87$1$1 Def0035
+S C$vibes_lab_dac_protocol.c$69$1$1 Def002D
+S C$vibes_lab_dac_protocol.c$77$2$2 Def002B
+S C$vibes_lab_dac_protocol.c$89$1$1 Def0037
+S XG$dacStop$0$0 Def0018
+S G$dacStop$0$0 Def0014
+S _dacSendByte Def0019
+S XG$dacSendByte$0$0 Def003E
+S _dacStart Def000F
+S G$dacSendByte$0$0 Def0019
+S _dacInit Def0000
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00
+R 00 00 00 02
+T 00 00
+R 00 00 00 03
+T 00 00
+R 00 00 00 04
+T 00 00
+R 00 00 00 17
+T 00 00 53 F4 FC 43 FE 03 C2 90 C2 91 D2 91 D2 90
+R 00 00 00 17
+T 00 0E 22
+R 00 00 00 17
+T 00 0F
+R 00 00 00 17
+T 00 0F C2 91 C2 90 22
+R 00 00 00 17
+T 00 14
+R 00 00 00 17
+T 00 14 D2 90 D2 91 22
+R 00 00 00 17
+T 00 19
+R 00 00 00 17
+T 00 19 AA 82 7B 00
+R 00 00 00 17
+T 00 1D
+R 00 00 00 17
+T 00 1D BB 08 00
+R 00 00 00 17
+T 00 20
+R 00 00 00 17
+T 00 20 50 0E EA 33 92 91 D2 90 EA 2A FA C2 90 0B
+R 00 00 00 17
+T 00 2E 80 ED
+R 00 00 00 17
+T 00 30
+R 00 00 00 17
+T 00 30 53 FE FD D2 90 A2 91 C2 90 43 FE 02 C2 91
+R 00 00 00 17
+T 00 3E 22
+R 00 00 00 17

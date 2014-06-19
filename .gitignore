@@ -1,0 +1,11 @@
+# syntastic c config file
+.syntastic*
+
+# compiled files
+*.elf
+*.lst
+*.hex
+*.est
+
+# documentation
+docs*
